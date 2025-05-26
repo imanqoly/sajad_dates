@@ -10,13 +10,15 @@
     box-sizing: border-box;
     font-family: sans-serif;
   }
-  
+  body{
+    background-color:#EBDDCD ;
+  }
   .parallax {
     position: relative;
     width: 100%;
     height: 100vh;
     list-style-type: none;
-  
+ 
     & header {
       width: inherit;
       position: absolute;
@@ -62,28 +64,56 @@
       position: absolute;
       width: inherit;
       height: inherit;
-      background-position: center 25%;
       background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
       z-index: -1;
       transition: transform 0.1 ease-out;
   
-      &:nth-of-type(1) { background-image: url('https://raw.githubusercontent.com/misalagp/imgs/53ece8c56d462838e143383adc1a3078c1960e4d/1.svg'); }
-      &:nth-of-type(2) { background-image: url('https://raw.githubusercontent.com/misalagp/imgs/53ece8c56d462838e143383adc1a3078c1960e4d/2.svg'); }
-      &:nth-of-type(3) { background-image: url('https://raw.githubusercontent.com/misalagp/imgs/53ece8c56d462838e143383adc1a3078c1960e4d/3.svg'); }
-      &:nth-of-type(4) { background-image: url('https://raw.githubusercontent.com/misalagp/imgs/53ece8c56d462838e143383adc1a3078c1960e4d/4.svg'); }
-      &:nth-of-type(5) { background-image: url('https://raw.githubusercontent.com/misalagp/imgs/53ece8c56d462838e143383adc1a3078c1960e4d/4.svg'); }
-      &:nth-of-type(6) { background-image: url('https://gist.githubusercontent.com/mondenoir/5395b6e7d9445c3a0fc82e6ece97268c/raw/bca5c0c6397e38d79b5af9e88f78f0aa7b515b94/img-1.svg'); }
+      &:nth-of-type(3) { background-image: url('../Images/Arq.png'); }
+      &:nth-of-type(5) { background-image: url('../Images/Desert.png'); }
+      &:nth-of-type(2) { background-image: url('../Images/sun.png'); mix-blend-mode: lighten; }
+      
+      &:nth-of-type(4) { background-image: url('../Images/tress.png'); background-size:contain; }
+      &:nth-of-type(6) { background-image: url('../Images/logo.png');background-size: contain; }
+      
     }
   }
   
   @media (height < 700px) {
     .parallax {
-      height: 160vh;
+      height: 100vh;
+      
     }
+    
+  }
+  @media (width < 700px) {
+    .parallax {
+      
+      & .layer {
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+        z-index: -1;
+        transition: transform 0.1 ease-out;
+    
+        &:nth-of-type(3) { background-image: url('../Images/Arq.png');  background-size:200% }
+        &:nth-of-type(5) { background-image: url('../Images/Desert.png'); background-position-x: 10%;}
+        &:nth-of-type(2) { background-image: url('../Images/sun.png'); mix-blend-mode: lighten; }
+        
+        &:nth-of-type(4) { background-image: url('../Images/tress.png'); background-size:contain; background-position-y: 50%; }
+        &:nth-of-type(6) { background-image: url('../Images/logo.png');background-size: contain; background-position-y: 10%;background-position-x: 80%; background-size:120%}
+        
+      }
+    }
+    
   }
   
-  .content {
-    background-color: rgba(39,40,25);
+  .content_history {
+    background-color: #E5AC6D;
     display: grid;
     place-items: center;
     gap: 3rem;
