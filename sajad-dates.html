@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function getLang() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get('lang') || 'en'; // default to English
+}
+const lang = getLang();
+    </script>
     <title>Document</title>
 </head>
 <body>
@@ -16,22 +23,15 @@
           <li class='layer'></li>
           <li class='layer'></li>
         </ul>
-        <article class='content_history'>
-          <section class='info'>
-            <h1>What is Lorem Ipsum?</h1>
-            <p> 
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </p>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-          </section>
-          <footer>
-            <ion-icon name="logo-twitter"></ion-icon>
-            <ion-icon name="logo-instagram"></ion-icon>
-            <ion-icon name="logo-facebook"></ion-icon>
-          </footer>
+        <article id='history' class='history'>
+            <h1 id="history-title"></h1>
+            <p id="history-text"></p>
+        </article>
+        <article id='KeyFeatures' class='KeyFeatures'>
+
         </article>
       </main>
-      
+    
       <section>
         <header>
           <p>Tagline</p>
@@ -40,13 +40,11 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti architecto exercitationem voluptates? Alias, obcaecati qui suscipit totam provident asperiores temporibus eveniet a. At sapiente quo quae dolorum accusamus. Libero, temporibus!
           </div>
           
-          <a href="https://codepen.io/HugoSalazar/pen/dyBzOdj?editors=1100" target="_blank">
-            Version without GSAP and Javascript
-          </a>
+          
         </header>
         
       <div class="l-cards">
-        <!-- CARD 1 -->
+        <!-- CARDS for types of dates -->
         <div class="c-card">
           <div class="c-card__description">
             <div class="c-card__tagline">
@@ -71,105 +69,7 @@
           </figure>
         </div>
         
-        <!-- CARD 2 -->
-        <div class="c-card">
-          <div class="c-card__description">
-            <div class="c-card__tagline">
-              Amon The Sign
-            </div>
-            
-            <h1 class="c-card__title">
-              Amón Lopez / Vocals
-            </h1>
-            
-            <div class="c-card__excerpt">
-              Amon Lopez es la voz masculina de la banda de Darkwave española: Amon The sign
-            </div>
-            
-            <div class="c-card__cta">
-              <a href="https://www.youtube.com/watch?v=aqacOQpfbxc&ab_channel=AmonTheSign" target="_blank">Escuchar en Youtube</a>
-            </div>
-          </div>
-      
-          <figure class="c-card__figure">
-            <img src="https://www.ats.hugo-salazar.com/wp-content/uploads/2023/04/pincho.jpeg" alt="Amon Lopez">
-          </figure>
-        </div>
         
-        <!-- CARD 3 -->
-        <div class="c-card">
-          <div class="c-card__description">
-            <div class="c-card__tagline">
-              Amon The Sign
-            </div>
-            
-            <h1 class="c-card__title">
-              Marisa / Vocals
-            </h1>
-            
-            <div class="c-card__excerpt">
-              Marisa es la voz femenina de la banda de Darkwave española: Amon The sign
-            </div>
-            
-            <div class="c-card__cta">
-              <a href="https://www.youtube.com/watch?v=aqacOQpfbxc&ab_channel=AmonTheSign" target="_blank">Escuchar en Youtube</a>
-            </div>
-          </div>
-      
-          <figure class="c-card__figure">
-            <img src="https://www.ats.hugo-salazar.com/wp-content/uploads/2023/04/marisa.jpeg" alt="Amon Lopez">
-          </figure>
-        </div>
-        
-        <!-- CARD 4 -->
-        <div class="c-card">
-          <div class="c-card__description">
-            <div class="c-card__tagline">
-              Amon The Sign
-            </div>
-            
-            <h1 class="c-card__title">
-              Vicente / Guitars
-            </h1>
-            
-            <div class="c-card__excerpt">
-              Vicente es el guitarrista de la banda de Darkwave española: Amon The sign
-            </div>
-            
-            <div class="c-card__cta">
-              <a href="https://www.youtube.com/watch?v=aqacOQpfbxc&ab_channel=AmonTheSign" target="_blank">Escuchar en Youtube</a>
-            </div>
-          </div>
-      
-          <figure class="c-card__figure">
-            <img src="https://www.ats.hugo-salazar.com/wp-content/uploads/2023/04/vicente.jpeg" alt="Vicente Payá">
-          </figure>
-        </div>
-        
-         <!-- CARD 5 -->
-        <div class="c-card">
-          <div class="c-card__description">
-            <div class="c-card__tagline">
-              Amon The Sign
-            </div>
-            
-            <h1 class="c-card__title">
-              Leoben Conoy / Synths
-            </h1>
-            
-            <div class="c-card__excerpt">
-              Leoben Conoy es el teclista de la banda de Darkwave española: Amon The sign
-            </div>
-            
-            <div class="c-card__cta">
-              <a href="https://www.youtube.com/watch?v=aqacOQpfbxc&ab_channel=AmonTheSign" target="_blank">Escuchar en Youtube</a>
-            </div>
-          </div>
-      
-          <figure class="c-card__figure">
-            <img src="https://www.ats.hugo-salazar.com/wp-content/uploads/2023/04/leoben.jpeg" alt="Vicente Payá">
-          </figure>
-        </div>
         
       </div>
       
@@ -229,5 +129,24 @@ cards.forEach((card, index) => {
     toggleActions: "restart none none reverse"
   });
 });
+</script>
+<script>
+    fetch(`sajadcontent.${lang}.json`)
+  .then(res => res.json())
+  .then(data => {
+    // Set text direction
+    document.body.setAttribute('dir', data.dir || 'ltr');
+
+    // Replace content (just examples)
+    document.getElementById('history-title').textContent = data.history.title;
+    document.getElementById('history-text').textContent = data.history.text;
+
+    // Example for list rendering
+    
+    
+  
+    });
+
+
 </script>
 </html>

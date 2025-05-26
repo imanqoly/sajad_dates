@@ -111,8 +111,10 @@
     }
     
   }
-  
-  .content_history {
+  p{
+    white-space: pre-wrap;
+  }
+  .history {
     background-color: #E5AC6D;
     display: grid;
     place-items: center;

@@ -1,8 +1,8 @@
 {
-  
+  "dir":"ltr",
     "history": {
       "title": "Our Heritage",
-      "text": "Sajad Dates is a brand built on over half a century of passion, expertise, and generational continuity—a story of a family rooted in the scorching yet fertile palm groves of Bam, who, since the 1940s, have intertwined their lives with the date palm. The founder of the Sajjadi family, relying on local knowledge, respect for the land, and a belief in quality, planted a seed that grew into a towering presence in Iran’s date industry. In the following decades, the second generation expanded the family groves, improved harvesting and storage methods, and took the first steps toward packaging and export—marking Sajjad’s entry into international markets. Tragically, this generation, who were the pillars of the brand’s growth and industrialization, perished in the devastating Bam earthquake. Yet the loss became a source of inspiration, not an end. Today, Sajjad continues stronger than ever, rooted in that legacy. The third generation ushered in a new era with advanced processing units, international certifications, a modern brand identity, and an export development team—paving the way for full entry into global markets. Now, Sajjad Dates stands as a leading exporter of Iranian Mazafati dates, with customers across Europe, Asia, Canada, and the Middle East. With a lasting commitment to quality, sustainability, and customer satisfaction, we remain proudly rooted while moving boldly toward the future. Sajjad is a story of generational continuity, enduring quality, and a global vision for an authentic Iranian product."
+      "text": "Sajad Dates is a brand built on over half a century of passion, expertise, and generational continuity—a story of a family rooted in the scorching yet fertile palm groves of Bam, who, since the 1940s, have intertwined their lives with the date palm. \n The founder of the Sajjadi family, relying on local knowledge, respect for the land, and a belief in quality, planted a seed that grew into a towering presence in Iran’s date industry. \nIn the following decades, the second generation expanded the family groves, improved harvesting and storage methods, and took the first steps toward packaging and export—marking Sajad’s entry into international markets. \nTragically, this generation, who were the pillars of the brand’s growth and industrialization, perished in the devastating Bam earthquake. \nYet the loss became a source of inspiration, not an end. Today, Sajad continues stronger than ever, rooted in that legacy. \nThe third generation ushered in a new era with advanced processing units, international certifications, a modern brand identity, and an export development team—paving the way for full entry into global markets. \nNow, Sajjad Dates stands as a leading exporter of Iranian Mazafati dates, with customers across Europe, Asia, Canada, and the Middle East. With a lasting commitment to quality, sustainability, and customer satisfaction, we remain proudly rooted while moving boldly toward the future. Sajjad is a story of generational continuity, enduring quality, and a global vision for an authentic Iranian product."
     },
     "KeyFeatures": {
     "title": "Key Features of Our Products",
@@ -28,7 +28,7 @@
   },
   "Salam": {
     "title": "Salam; A New Taste with Ancient Roots",
-    "text": "In a world where speed has replaced flavor, Salam is an invitation to a sweet pause—a moment to savor authenticity in a fresh form. Salam, the creative complement to the Sajjad export brand, was born with a new vision for Iranian dates—to show how a traditional product can be transformed into a modern, healthy, and delightful experience. From date chocolates and natural energy bars to youth-friendly, ready-to-eat packaging, Salam is here to connect today’s tastes with ancient roots. Salam represents a new generation of date products: flavorful, healthy, smartly designed, and ready to be part of the modern lifestyle."
+    "text": "In a world where speed has replaced flavor, Salam is an invitation to a sweet pause—a moment to savor authenticity in a fresh form. \nSalam, the creative complement to the Sajjad export brand, was born with a new vision for Iranian dates—to show how a traditional product can be transformed into a modern, healthy, and delightful experience. \nFrom date chocolates and natural energy bars to youth-friendly, ready-to-eat packaging, Salam is here to connect today’s tastes with ancient roots. Salam represents a new generation of date products: flavorful, healthy, smartly designed, and ready to be part of the modern lifestyle."
   },
   "SpecializedServices": {
     "title": "Sajjad Dates Specialized Services",
@@ -37,29 +37,109 @@
     "items": [
         {
         "title": "Direct Supply of Premium Dates from Top Iranian Farms",
-        "text": "We source the finest varieties—including Mazafati, Piarom, Zahedi, Rabbi, and other export-grade types—directly from selected farms. All our products are packaged and shipped according to international agricultural and hygiene standards, ensuring you can confidently distribute them in your target markets."
+        "text": "We source the finest varieties—including Mazafati, Piarom, Zahedi, Rabbi, and other export-grade types—directly from selected farms. All our products are packaged and shipped according to international agricultural and hygiene standards, ensuring you can confidently distribute them in your target markets.\n"
         },
         {
         "title": "Custom Packaging and Professional Branding",
-        "text": "For us, packaging is not just product protection; it’s a chance to tell your brand’s story. By providing a wide range of creative, hygienic, luxurious, and eco-friendly packaging options, we help you stand out distinctively in the market."
+        "text": "For us, packaging is not just product protection; it’s a chance to tell your brand’s story. By providing a wide range of creative, hygienic, luxurious, and eco-friendly packaging options, we help you stand out distinctively in the market.\n"
         },
         {
         "title": "Export Consulting and Target Market Development",
-        "text": "Our team, with deep knowledge of export pathways, international regulations, and consumer behavior across markets, supports you through every stage of entering, stabilizing, and expanding in foreign markets."
+        "text": "Our team, with deep knowledge of export pathways, international regulations, and consumer behavior across markets, supports you through every stage of entering, stabilizing, and expanding in foreign markets.\n"
         },
         {
         "title": "Full Support and After-Sales Service",
-        "text": "We are more than just a supplier—we care about your long-term success. From selecting the most suitable date variety to final delivery, we stand by you to ensure a smooth, reliable, and satisfying experience."
+        "text": "We are more than just a supplier—we care about your long-term success. From selecting the most suitable date variety to final delivery, we stand by you to ensure a smooth, reliable, and satisfying experience.\n"
         },
         {
         "title": "Smart Logistics and Timely Delivery",
-        "text": "Fast and precise shipping, leveraging trusted logistics networks, guarantees that your products reach customers promptly while preserving quality."
+        "text": "Fast and precise shipping, leveraging trusted logistics networks, guarantees that your products reach customers promptly while preserving quality.\n"
         }
       
     ]
   },
   "Nutritional Value":{
-    "title": "Nutritional Value & Health Benefits of Dates"
-    
+    "title": "Nutritional Value & Health Benefits of Dates",
+    "abstract": "Dates are a natural treasure trove of energy, fiber, and essential vitamins—supporting immune health, heart function, and better digestion.",
+    "howToConsumeTitle":"Dates are a natural treasure trove of energy, fiber, and essential vitamins—supporting immune health, heart function, and better digestion.",
+    "howToText":"Dates can be enjoyed fresh, dried, or as a purée in various foods and drinks. Eat them on their own, blend them into smoothies, toss them in salads, or use them as a natural sweetener in cakes and desserts. \nDates are also a popular ingredient in energy bars, snacks, and mixes with nuts and seeds. Sajad Dates, with their premium quality, rich nutrient profile, and zero chemical additives, are an excellent choice for daily consumption and a wholesome addition to any diet.",
+    "keyUses":{
+        "items":[
+            "Natural sweetener in desserts and beverages",
+            "Nutritious base for snacks, energy bars, and chocolates",
+            "Ideal for clean, sugar-free diets"
+        ]
+    }
+  },
+  "datesTypes":{
+    "title": "Sajjad Dates Varieties",
+  "varieties": [
+    {
+      "name": "Mazafati",
+      "origin": "Bam County, Kerman Province",
+      "features": "Soft, velvety texture; dark near-black color; high moisture; very sweet taste",
+      "uses": "Daily consumption; luxury packaging; health-focused markets",
+      "harvest_time": "Late August – October",
+      "competitive_advantage": "Fresh-eating; most popular date variety in Iran and many international markets"
+    },
+    {
+      "name": "Piarom",
+      "origin": "Hajiabad County, Hormozgan Province",
+      "features": "Semi-dry, meaty texture; low sugar; glossy dark-brown color; unique flavor",
+      "uses": "Luxury export markets in Europe & the Gulf; ideal for diabetic diets",
+      "harvest_time": "October",
+      "competitive_advantage": "Low sugar; long shelf life; known as “chocolate date”; premium export product"
+    },
+    {
+      "name": "Zahedi",
+      "origin": "Fars Province & southern Iran",
+      "features": "Completely dry; amber-to-light-brown color; firm, nutrient-dense texture",
+      "uses": "General consumption; baking and date flour production",
+      "harvest_time": "Late August",
+      "competitive_advantage": "Very long shelf life; easy handling & storage"
+    },
+    {
+      "name": "Rabbi",
+      "origin": "Sistan & Baluchestan Province",
+      "features": "Semi-dry; elongated shape; thin skin; reddish-brown color; distinctive taste",
+      "uses": "Food processing; export markets",
+      "harvest_time": "August – September",
+      "competitive_advantage": "Affordable price; high shelf life; very processable"
+    },
+    {
+      "name": "Kaluteh",
+      "origin": "Jiroft County, Kerman Province",
+      "features": "Semi-moist; sweet taste; looks similar to Mazafati at a lower price point",
+      "uses": "Cost-effective substitute for Mazafati; emerging markets",
+      "harvest_time": "Late August",
+      "competitive_advantage": "Economical; easy supply; pleasant flavor"
+    },
+    {
+      "name": "Sayer",
+      "origin": "Khuzestan Province",
+      "features": "Semi-dry; mild sweet taste; light-brown color; long storage life",
+      "uses": "European bulk export; wholesale; snack mixes with nuts",
+      "harvest_time": "Late August",
+      "competitive_advantage": "Excellent for large-scale export; competitive pricing"
+    }
+  ]
+  },
+  "packaging":{
+    "chant":"We at Sajjad Dates are always ready to build close connections with our clients and deliver an unparalleled experience trading authentic Iranian dates.",
+    "text":"In the competitive world of food exports, choosing a reliable supplier of premium Iranian dates can make all the difference in your success. \nAt Sajjad, every variety of date is harvested, processed, and packed under the highest hygiene standards to ensure you receive a healthy, fresh, and trustworthy product. We use optimized packaging to preserve quality and extend shelf life, and we’re prepared to fulfill high-volume orders with precise, on-time delivery.",
+    "packagingOptions":{
+        "item":[
+            "Bulk export: 5 kg and 10 kg sacks",
+            "Luxury consumer packs: 250 g to 1 kg",
+            "Heavy-duty cartons suitable for sea and air freight"
+        ]
+    },
+    "MinOrder":{
+        "item":[
+            "1 pallet (retail markets)",
+            "1 container (wholesale/large orders)"
+        ]
+    },
+    "lastWord":"Let’s grow together—partner with Sajjad Dates for consistency, quality, and a truly seamless export experience."
   }
 }
