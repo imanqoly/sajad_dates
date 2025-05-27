@@ -11,7 +11,7 @@
     font-family: sans-serif;
   }
   body{
-    background-color:#EBDDCD ;
+    background: linear-gradient(to bottom, #ffcd9e, #8f2e08);
     max-width: 1000px ;
     margin: 0 auto;
  
@@ -112,11 +112,14 @@
       z-index: -1;
       transition: transform 0.1 ease-out;
   
-      &:nth-of-type(3) { background-image: url('../Images/Arq.png');background-size:contain; }
-      &:nth-of-type(5) { background-image: url('../Images/Desert.png'); background-size:cover; }
-      &:nth-of-type(2) { background-image: url('../Images/sun.png'); mix-blend-mode: lighten; }
+      &:nth-of-type(2) { background-image: url('../Images/Arq.png');background-size:contain; }
+      &:nth-of-type(4) { background-image: url('../Images/Desert.png'); background-size:cover; }
+      &:nth-of-type(5) { background-image: url('../Images/Bowl.png'); background-size:contain; }
+      &:nth-of-type(1) { background-image: url('../Images/sun.png'); mix-blend-mode: screen; }
       
-      &:nth-of-type(4) { background-image: url('../Images/tress.png'); background-size:contain; }
+        
+      
+      &:nth-of-type(3) { background-image: url('../Images/tress.png'); background-size:contain; }
       &:nth-of-type(6) { background-image: url('../Images/logo.png');background-size: contain; }
       
     }
@@ -142,11 +145,12 @@
         z-index: -1;
         transition: transform 0.1 ease-out;
     
-        &:nth-of-type(3) { background-image: url('../Images/Arq.png');  background-size:200% }
-        &:nth-of-type(5) { background-image: url('../Images/Desert.png'); background-size:cover;}
-        &:nth-of-type(2) { background-image: url('../Images/sun.png'); mix-blend-mode: lighten; }
+        &:nth-of-type(2) { background-image: url('../Images/Arq.png');  background-size:200% }
+        &:nth-of-type(4) { background-image: url('../Images/Desert.png'); background-size:cover;}
+        &:nth-of-type(5) { background-image: url('../Images/Bowl.png'); background-size:cover;background-position-x: 10%; }
+        &:nth-of-type(1) { background-image: url('../Images/sun.png'); mix-blend-mode: screen; }
         
-        &:nth-of-type(4) { background-image: url('../Images/tress.png'); background-size:contain; background-position-y: 50%; }
+        &:nth-of-type(3) { background-image: url('../Images/tress.png'); background-size:contain; background-position-y: 50%; }
         &:nth-of-type(6) { background-image: url('../Images/logo.png');background-size: contain; background-position-y: 10%;background-position-x: 80%; background-size:120%}
         
       }

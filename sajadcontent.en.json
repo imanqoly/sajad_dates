@@ -80,7 +80,8 @@
       "features": "Soft, velvety texture; dark near-black color; high moisture; very sweet taste",
       "uses": "Daily consumption; luxury packaging; health-focused markets",
       "harvest_time": "Late August – October",
-      "competitive_advantage": "Fresh-eating; most popular date variety in Iran and many international markets"
+      "competitive_advantage": "Fresh-eating; most popular date variety in Iran and many international markets",
+      "image": "./Images/mazafati.png"
     },
     {
       "name": "Piarom",
@@ -88,7 +89,8 @@
       "features": "Semi-dry, meaty texture; low sugar; glossy dark-brown color; unique flavor",
       "uses": "Luxury export markets in Europe & the Gulf; ideal for diabetic diets",
       "harvest_time": "October",
-      "competitive_advantage": "Low sugar; long shelf life; known as “chocolate date”; premium export product"
+      "competitive_advantage": "Low sugar; long shelf life; known as “chocolate date”; premium export product",
+      "image": "./Images/piarom.png"
     },
     {
       "name": "Zahedi",
@@ -96,7 +98,8 @@
       "features": "Completely dry; amber-to-light-brown color; firm, nutrient-dense texture",
       "uses": "General consumption; baking and date flour production",
       "harvest_time": "Late August",
-      "competitive_advantage": "Very long shelf life; easy handling & storage"
+      "competitive_advantage": "Very long shelf life; easy handling & storage",
+      "image": "./Images/zahedi.png"
     },
     {
       "name": "Rabbi",
@@ -104,7 +107,8 @@
       "features": "Semi-dry; elongated shape; thin skin; reddish-brown color; distinctive taste",
       "uses": "Food processing; export markets",
       "harvest_time": "August – September",
-      "competitive_advantage": "Affordable price; high shelf life; very processable"
+      "competitive_advantage": "Affordable price; high shelf life; very processable",
+      "image": "./Images/rabbi.png"
     },
     {
       "name": "Kaluteh",
@@ -112,15 +116,17 @@
       "features": "Semi-moist; sweet taste; looks similar to Mazafati at a lower price point",
       "uses": "Cost-effective substitute for Mazafati; emerging markets",
       "harvest_time": "Late August",
-      "competitive_advantage": "Economical; easy supply; pleasant flavor"
+      "competitive_advantage": "Economical; easy supply; pleasant flavor",
+      "image": "./Images/koluteh.png"
     },
     {
-      "name": "Sayer",
+      "name": "Others",
       "origin": "Khuzestan Province",
       "features": "Semi-dry; mild sweet taste; light-brown color; long storage life",
       "uses": "European bulk export; wholesale; snack mixes with nuts",
       "harvest_time": "Late August",
-      "competitive_advantage": "Excellent for large-scale export; competitive pricing"
+      "competitive_advantage": "Excellent for large-scale export; competitive pricing",
+      "image": "./Images/others.png"
     }
   ]
   },
