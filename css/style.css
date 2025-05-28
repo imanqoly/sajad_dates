@@ -1,182 +1,207 @@
 :root {
-    --link: rgb(113, 128, 113);
-  }
-  
-  *,
-  *::before,
-  *::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-  }
-  body{
-    background: linear-gradient(to bottom, #ffe8d2, #8f2e08);
-    max-width: 1000px ;
-    margin: 0 auto;
- 
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    
-  }
-  .container {
-    position: relative;
-  }
-  
-  .section {
-    position: sticky;
-    top: 0;
-    height: 100vh;
+  --link: rgb(113, 128, 113);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #ffe8d2, #8f2e08);
+  max-width: 1000px;
+  margin: 0 auto;
+
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+.container {
+  position: relative;
+}
+
+.section {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+
+/* Backgrounds for effect */
+.section:nth-child(1) {
+  background: #ffffff;
+  color: black;
+}
+
+.section:nth-child(2) {
+  background: linear-gradient(to bottom, #411b03, #eb833d);
+  color: white;
+}
+
+.section:nth-child(3) {
+  background: linear-gradient(to bottom, #a84021, #8f7b08);
+  color: white;
+}
+
+.section:nth-child(4) {
+  background: linear-gradient(to bottom, #bfdbfe, #c7d2fe);
+  color: black;
+}
+
+.parallax {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  list-style-type: none;
+  margin: 0 auto;
+
+  & header {
+    width: inherit;
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    font-family: sans-serif;
-    font-size: 2rem;
-  }
-  
-  /* Backgrounds for effect */
-  .section:nth-child(1) {
-    background: #ffffff;
-    color: black;
-  }
-  .section:nth-child(2) {
-    background: linear-gradient(to bottom, #411b03, #eb833d);
-    color: white;
-  }
-  .section:nth-child(3) {
-    background: linear-gradient(to bottom, #a84021, #8f7b08);
-    color: white;
-  }
-  .section:nth-child(4) {
-    background: linear-gradient(to bottom, #bfdbfe, #c7d2fe);
-    color: black;
-  }
-  .parallax {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    list-style-type: none;
-    margin: 0 auto;
- 
-    & header {
-      width: inherit;
-      position: absolute;
+    padding: 1.5rem;
+
+    & .menu {
+      list-style-type: none;
       display: flex;
-      justify-content: end;
-      align-items: center;
-      padding: 1.5rem;
-  
-      & .menu {
-        list-style-type: none;
-        display: flex;
-        gap: 1.25rem;
-  
-        &:hover a:not(:hover) { border: none; }
-  
-        & li:first-of-type a { border-bottom: 2px solid var(--link); }
-  
-        & a {
-          text-decoration: none;
-          font: 900 0.75rem futura,sans-serif;
-          color: var(--link);
-          text-transform: uppercase;
-          padding-bottom: 0.5rem;
-  
-          &:hover { border-bottom: 2px solid var(--link); }
+      gap: 1.25rem;
+
+      &:hover a:not(:hover) {
+        border: none;
+      }
+
+      & li:first-of-type a {
+        border-bottom: 2px solid var(--link);
+      }
+
+      & a {
+        text-decoration: none;
+        font: 900 0.75rem futura, sans-serif;
+        color: var(--link);
+        text-transform: uppercase;
+        padding-bottom: 0.5rem;
+
+        &:hover {
+          border-bottom: 2px solid var(--link);
         }
       }
-  
-      & .hamburger {
-        font-size: 2rem;
-        color: var(--link);
-        cursor: pointer;
+    }
+
+    & .hamburger {
+      font-size: 2rem;
+      color: var(--link);
+      cursor: pointer;
+      display: none;
+    }
+
+    @media (width < 700px) {
+      & .menu {
         display: none;
       }
-  
-      @media (width < 700px) {
-        & .menu       { display: none; }
-        & .hamburger  { display: block; }
+
+      & .hamburger {
+        display: block;
       }
     }
-  
-    & .layer {
-      position: absolute;
-      width: inherit;
-      height: inherit;
-      background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-      z-index: -1;
-      transition: transform 0.1 ease-out;
-  
-      &:nth-of-type(2) { background-image: url('../Images/Arq.png');background-size:contain;  }
-      &:nth-of-type(4) { background-image: url('../Images/Desert.png'); background-size:cover; }
-      &:nth-of-type(5) { background-image: url('../Images/Bowl.png'); background-size:contain; }
-      &:nth-of-type(1) { background-image: url('../Images/sun.png'); mix-blend-mode: screen;}
-      
-      &:nth-of-type(7) { background-image: url('../Images/reflection.png');background-size: contain;mix-blend-mode: screen; }
-        &:nth-of-type(8) { background-image: url('../Images/leaf.png');background-size: contain; }
-      
-      &:nth-of-type(3) { background-image: url('../Images/tress.png'); background-size:contain; }
-      &:nth-of-type(6) { background-image: url('../Images/logo.png');background-size: contain; }
-      
-    }
   }
-  
-  @media (height < 700px) {
-    .parallax {
-      height: 100vh;
-      
-    }
-    
-  }
-  @media (width < 700px) {
-    .parallax {
-      height: 50vh;
-      & .layer {
-        position: absolute;
-        width: inherit;
-        height: inherit;
-        background-size: cover;
+
+  & .layer {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-        z-index: -1;
-        transition: transform 0.1 ease-out;
-    
-        &:nth-of-type(2) { background-image: url('../Images/Arq.png');  background-size:200% }
-        &:nth-of-type(4) { background-image: url('../Images/Desert.png'); background-size:cover;}
-        &:nth-of-type(5) { background-image: url('../Images/Bowl.png'); background-size:cover;background-position-x: 10%; }
-        &:nth-of-type(1) { background-image: url('../Images/sun.png'); mix-blend-mode: screen; }
-        &:nth-of-type(7) { background-image: url('../Images/reflection.png');background-size: cover;mix-blend-mode: screen; }
-        &:nth-of-type(8) { background-image: url('../Images/leaf.png');background-size: cover;background-position-x: 10%; }
-        
-      
-        &:nth-of-type(3) { background-image: url('../Images/tress.png'); background-size:contain; background-position-y: 50%; }
-        &:nth-of-type(6) { background-image: url('../Images/logo.png');background-size: contain; background-position-y: 10%;background-position-x: 80%; background-size:120%}
-        
-      }
+    z-index: -1;
+    transition: transform 0.1 ease-out;
+
+    &:nth-of-type(2) {
+      background-image: url('../Images/Arq.png');
+      background-size: contain;
     }
-    
+
+    &:nth-of-type(4) {
+      background-image: url('../Images/Desert.png');
+      background-size: cover;
+    }
+
+    &:nth-of-type(5) {
+      background-image: url('../Images/Bowl.png');
+      background-size: contain;
+    }
+
+    &:nth-of-type(1) {
+      background-image: url('../Images/sun.png');
+      mix-blend-mode: screen;
+    }
+
+    &:nth-of-type(7) {
+      background-image: url('../Images/reflection.png');
+      background-size: contain;
+      mix-blend-mode: screen;
+    }
+
+    &:nth-of-type(8) {
+      background-image: url('../Images/leaf.png');
+      background-size: contain;
+    }
+
+    &:nth-of-type(3) {
+      background-image: url('../Images/tress.png');
+      background-size: contain;
+    }
+
+    &:nth-of-type(6) {
+      background-image: url('../Images/logo.png');
+      background-size: contain;
+    }
+
   }
-  p{
-    white-space: pre-wrap;
+}
+
+@media (height < 700px) {
+  .parallax {
+    height: 100vh;
+
   }
-   #history-title{
-    color:white;
-     
+
+}
+
+
+
+p {
+  white-space: pre-wrap;
+}
+
+#history-title {
+  color: white;
+
   font-size: 2rem;
   margin-bottom: 1rem;
-  }
-  #history-text{
-    color: wheat;
-     font-size: 1rem;
+}
+
+#history-text {
+  color: wheat;
+  font-size: 1rem;
   line-height: 1.6;
-  }
-  .features-list {
+}
+
+.features-list {
   flex-basis: 100%;
   list-style: none;
   padding: 0;
@@ -198,6 +223,7 @@
   left: 0;
   top: 0;
 }
+
 .heritage-visuals {
   flex: 1 1 300px;
   position: relative;
@@ -212,7 +238,7 @@
   border-radius: 50%;
   overflow: hidden;
   border: 5px solid white;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
 }
 
@@ -224,170 +250,267 @@
 
 
 
-  .history {
-    background-color: #E5AC6D;
+.history {
+  background-color: #E5AC6D;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  & .info {
+    width: min(80vw, 550px);
+    font: 0.85rem/1.8 futura, sans-serif;
+    color: rgba(255, 255, 255, 0.5);
     display: flex;
     flex-direction: column;
-   padding: 20px;
-  
-    & .info {
-      width: min(80vw,550px);
-      font: 0.85rem/1.8 futura,sans-serif;
-      color: rgba(255,255,255,0.5);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2.5rem;
-  
-      & h1 {
-        font-size: 1.25rem;
-        color: rgb(204, 117, 107);
-      }
-  
-      & img { width: 30vmin; }
+    align-items: center;
+    gap: 2.5rem;
+
+    & h1 {
+      font-size: 1.25rem;
+      color: rgb(204, 117, 107);
     }
-  
-    & footer {
-      display: flex;
-      gap: 1rem;
-      padding-bottom: 3rem;
-  
-      & ion-icon {
-        cursor: pointer;
-        color: rgb(93, 106, 93);
-        font-size: 1.1rem;
-  
-        &:hover { color: rgb(121, 149, 121); }
+
+    & img {
+      width: 30vmin;
+    }
+  }
+
+  & footer {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 3rem;
+
+    & ion-icon {
+      cursor: pointer;
+      color: rgb(93, 106, 93);
+      font-size: 1.1rem;
+
+      &:hover {
+        color: rgb(121, 149, 121);
       }
     }
   }
-  .heritage-container{
-background-color: #EBDDCD;
-margin: 20x;
-border-radius: 50px;
-width: 90%;
-height: 100%;
-  }
-  .heritage-container::after{
-    content: "";
-  display: block; /* or use position:absolute for overlays */
+}
+
+.heritage-container {
+  background-color: #EBDDCD;
+  margin: 20x;
+  border-radius: 50px;
+  width: 100%;
+  height: 90%
+}
+
+.heritage-container::after {
+  content: "";
+  display: block;
+  /* or use position:absolute for overlays */
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 
-  background-image: url('../Images/centi.png');
-  background-size:80%;   /* or 'contain' if you prefer */
+  background-image: url('../Images/CenN.png');
+  background-size: 50%;
+  /* or 'contain' if you prefer */
   background-repeat: no-repeat;
-  background-position: center;
-  opacity: 1;             /* optional: makes it semi-transparent */
-  z-index: -1;    
+  background-position-y: top;
+  background-position-x: right;
+  opacity: 1;
+  /* optional: makes it semi-transparent */
+  z-index: 1;
+}
+
+header {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 64px 20px;
+  color: white;
+  text-align: center;
+
+  p {
+    margin-bottom: 16px;
   }
-  header {
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 64px 20px;
-    color: white;
-    text-align: center;
-    
-    p {
-      margin-bottom: 16px;
-    }
-    
-    h1 {
-      margin-bottom: 24px;
-      font-size: 44px;
-    }
-    
-    div {
-      margin-bottom: 24px;
-      font-size: 18px;
-      line-height: 32px;
-    }
-    
-    a {
-      font-size: 24px;
-      color: var(--color-white);
-      opacity: 1;
-      transition: opacity .3s linear;
-      
-      &:hover {
-        opacity: .8;
-      }
+
+  h1 {
+    margin-bottom: 24px;
+    font-size: 44px;
+  }
+
+  div {
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  a {
+    font-size: 24px;
+    color: var(--color-white);
+    opacity: 1;
+    transition: opacity .3s linear;
+
+    &:hover {
+      opacity: .8;
     }
   }
-  
-  .l-cards {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .c-card {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 24px;
-    margin-top: 20px;
-    width: 100%;
-    height: 90vh;
-    min-height: 600px;
-    background-color: white;
-    border: 1px solid var(--color-dark);
-    
-    .c-card__description {
+}
+
+.l-cards {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.c-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+  margin-top: 20px;
+  width: 100%;
+  height: 90vh;
+  min-height: 600px;
+  background-color: white;
+  border: 1px solid var(--color-dark);
+
+  .c-card__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+
+    .c-card__tagline {
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .c-card__title {
+      font-size: 36px;
+    }
+
+    .c-card__excerpt {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .c-card__cta {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 40px;
-      
-      .c-card__tagline {
+      align-items: center;
+      gap: 16px;
+      margin-top: 32px;
+
+      a {
+        width: max-content;
+        padding: 12px 24px;
+        border: 1px solid black;
+        color: black;
         font-size: 16px;
-        font-weight: 600;
-        text-transform: uppercase;
-      }
-      
-      .c-card__title {
-        font-size: 36px;
-      }
-      
-      .c-card__excerpt {
-        font-size: 16px;
-        line-height: 1.6;
-      }
-      
-      .c-card__cta {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        margin-top: 32px;
-        
-        a {
-          width: max-content;
-          padding: 12px 24px;
-          border: 1px solid black;
-          color: black;
-          font-size: 16px;
-          text-decoration: none;
-        }
-      }
-    }
-      
-    .c-card__figure {
-      position: relative;
-      overflow: hidden;
-  
-      img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        text-decoration: none;
       }
     }
   }
-  
-  .spacer {
-    width: 100%;
-    height: 100vh;
+
+  .c-card__figure {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
- 
+}
+
+.spacer {
+  width: 100%;
+  height: 100vh;
+}
+@media (width < 700px) {
+  .heritage-container::after {
+    content: "";
+    display: block;
+    /* or use position:absolute for overlays */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-image: url('../Images/CenN.png');
+    background-size: 50%;
+    /* or 'contain' if you prefer */
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: right;
+    opacity: 1;
+    /* optional: makes it semi-transparent */
+    z-index: 1;
+  }
+
+  .parallax {
+    height: 50vh;
+
+    & .layer {
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: -1;
+      transition: transform 0.1 ease-out;
+
+      &:nth-of-type(2) {
+        background-image: url('../Images/Arq.png');
+        background-size: 200%
+      }
+
+      &:nth-of-type(4) {
+        background-image: url('../Images/Desert.png');
+        background-size: cover;
+      }
+
+      &:nth-of-type(5) {
+        background-image: url('../Images/Bowl.png');
+        background-size: cover;
+        background-position-x: 10%;
+      }
+
+      &:nth-of-type(1) {
+        background-image: url('../Images/sun.png');
+        mix-blend-mode: screen;
+      }
+
+      &:nth-of-type(7) {
+        background-image: url('../Images/reflection.png');
+        background-size: cover;
+        mix-blend-mode: screen;
+      }
+
+      &:nth-of-type(8) {
+        background-image: url('../Images/leaf.png');
+        background-size: cover;
+        background-position-x: 10%;
+      }
+
+
+      &:nth-of-type(3) {
+        background-image: url('../Images/tress.png');
+        background-size: contain;
+        background-position-y: 50%;
+      }
+
+      &:nth-of-type(6) {
+        background-image: url('../Images/logo.png');
+        background-size: contain;
+        background-position-y: 10%;
+        background-position-x: 80%;
+        background-size: 120%
+      }
+
+    }
+  }
+
+}
