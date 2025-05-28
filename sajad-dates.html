@@ -40,14 +40,8 @@
       <div class="heritage-container">
         
     
-
-        <ul class="features-list">
-          <li>Handpicked from premium palm groves in Bam</li>
-          <li>Diverse packaging options: bulk, consumer packs...</li>
-          <li>Compliant with global standards (HACCP, ISO, etc.)</li>
-          <li>Suitable for both B2B and B2C markets worldwide</li>
-          <li>High supply capacity for large and seasonal orders</li>
-        </ul>
+        <h4 id="features-title"></h4>
+        <ul class="features-list"></ul>
       </div>
     </section>
     <section class="section">
@@ -155,7 +149,19 @@
       document.body.setAttribute('dir', data.dir || 'ltr');
       document.getElementById('history-title').textContent = data.history.title;
       document.getElementById('history-text').textContent = data.history.text;
+      document.getElementById('features-title').textContent =data.KeyFeatures.title;
+      const featuresList = document.querySelector('.features-list');
 
+      // Make sure it exists before using forEach
+      if (data.KeyFeatures && Array.isArray(data.KeyFeatures.items)) {
+        featuresList.innerHTML = ''; // Clear existing <li> if needed
+
+        data.KeyFeatures.items.forEach(feature => {
+          const li = document.createElement('li');
+          li.textContent = feature;
+          featuresList.appendChild(li);
+        });
+      }
       // Load and insert cards
       const cardsContainer = document.querySelector('.l-cards');
       const varieties = data.datesTypes.varieties;
