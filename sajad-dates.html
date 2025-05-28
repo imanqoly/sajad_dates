@@ -1,141 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        function getLang() {
-  const params = new URLSearchParams(window.location.search);
-  return params.get('lang') || 'en'; // default to English
-}
-const lang = getLang();
-    </script>
-    <title>Document</title>
-</head>
-<body>
-    <main>
-        <ul class='parallax'>
-          <li class='layer'></li>
-          <li class='layer'></li>
-          <li class='layer'></li>
-          <li class='layer'></li>
-          <li class='layer'></li>
-          <li class='layer'></li>
-        </ul>
-        <article id='history' class='history'>
-            <h1 id="history-title"></h1>
-            <p id="history-text"></p>
-        </article>
-        <article id='KeyFeatures' class='KeyFeatures'>
 
-        </article>
-      </main>
-      <div class="container">
-        <section class="section">
-          <h2>The First slide</h2>
-          <p>Scroll Down for next slide</p>
-        </section>
-        <section class="section">
-          <h2>The Second slide</h2>
-          <p>Scroll Down for next slide</p>
-        </section>
-        <section class="section">
-          <h2>The Third slide</h2>
-          <p>Scroll Down</p>
-        </section>
-        <section class="section">
-          <h2>The Fourth slide</h2>
-        </section>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    function getLang() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('lang') || 'en'; // default to English
+    }
+    const lang = getLang();
+  </script>
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <ul class='parallax'>
+      <li class='layer'></li>
+      <li class='layer'></li>
+      <li class='layer'></li>
+      <li class='layer'></li>
+      <li class='layer'></li>
+      <li class='layer'></li>
+      <li class='layer'></li>
+      <li class='layer'></li>
+    </ul>
+    <article id='history' class='history'>
+      <h1 id="history-title"></h1>
+      <p id="history-text"></p>
+    </article>
+    <article id='KeyFeatures' class='KeyFeatures'>
+
+    </article>
+  </main>
+  <div class="container">
+    <section class="section">
+      <div class="heritage-container">
+        
+    
+
+        <ul class="features-list">
+          <li>Handpicked from premium palm groves in Bam</li>
+          <li>Diverse packaging options: bulk, consumer packs...</li>
+          <li>Compliant with global standards (HACCP, ISO, etc.)</li>
+          <li>Suitable for both B2B and B2C markets worldwide</li>
+          <li>High supply capacity for large and seasonal orders</li>
+        </ul>
       </div>
-     
-      <section>
-        <header>
-          <p>Tagline</p>
-          <h1>Short heading goes here</h1>
-          <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti architecto exercitationem voluptates? Alias, obcaecati qui suscipit totam provident asperiores temporibus eveniet a. At sapiente quo quae dolorum accusamus. Libero, temporibus!
-          </div>
-          
-          
-        </header>
-        <div class="l-cards" id="dates-cards-container"></div>
-      
-      
-      <div class="spacer"></div>
-      </section>
+    </section>
+    <section class="section">
+      <h2>The Second slide</h2>
+      <p>Scroll Down for next slide</p>
+    </section>
+    <section class="section">
+      <h2>The Third slide</h2>
+      <p>Scroll Down</p>
+    </section>
+    <section class="section">
+      <h2>The Fourth slide</h2>
+    </section>
+  </div>
+
+  <section>
+    <header>
+      <p>Tagline</p>
+      <h1>Short heading goes here</h1>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti architecto exercitationem voluptates? Alias,
+        obcaecati qui suscipit totam provident asperiores temporibus eveniet a. At sapiente quo quae dolorum accusamus.
+        Libero, temporibus!
+      </div>
+
+
+    </header>
+    <div class="l-cards" id="dates-cards-container"></div>
+
+
+  
+  </section>
 
 </body>
 
 <script>
-    const layers = document.querySelectorAll('.layer');
+  const layers = document.querySelectorAll('.layer');
 
-function parallax() {
-  const y = window.scrollY;
-  for (let i = 1; i < layers.length; i++) {
-    layers[layers.length-i].style.transform = `translateY(${(i*0.1) * y}px)`;
+  function parallax() {
+    const y = window.scrollY;
+
+    for (let i = 1; i < layers.length; i++) {
+      const index = layers.length - i;
+      const el = layers[index];
+
+      // Basic vertical parallax
+      let transform = `translateY(${(i * 0.1) * y}px)`;
+
+      // Add rotation only to the 7th layer (last one)
+      if (i === 2) {
+        const rotateDeg = y * 0.05; // Tweak rotation speed here
+        transform += ` rotate(${rotateDeg}deg)`;
+      }
+
+      el.style.transform = transform;
+    }
   }
-}
 
-window.addEventListener('scroll',parallax,false);
+  window.addEventListener('scroll', parallax, false);
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
 <!-- GSAP ScrollTrigger plugin -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script>
-    gsap.registerPlugin(ScrollTrigger);
-    const cards = gsap.utils.toArray(".c-card");
-const lastCardIndex = cards.length - 1;
+  gsap.registerPlugin(ScrollTrigger);
+  const cards = gsap.utils.toArray(".c-card");
+  const lastCardIndex = cards.length - 1;
 
-// Crear el ScrollTrigger para la primera y última tarjeta
-const firstCardST = ScrollTrigger.create({
-  trigger: cards[1],
-  start: "center center"
-});
-
-const lastCardST = ScrollTrigger.create({
-  trigger: cards[cards.length - 1],
-  start: "center center"
-});
-
-// Iterar sobre cada tarjeta
-cards.forEach((card, index) => {
-  const scale = index === lastCardIndex ? 1 : 0.5;
-  const scaleDown = gsap.to(card, {
-    scale: scale,
+  // Crear el ScrollTrigger para la primera y última tarjeta
+  const firstCardST = ScrollTrigger.create({
+    trigger: cards[1],
+    start: "center center"
   });
 
-  ScrollTrigger.create({
-    trigger: card,
-    start: "top top",
-    end: () => lastCardST.start,
-    pin: true,
-    pinSpacing: false,
-    scrub: 0.5,
-    ease: "none",
-    animation: scaleDown,
-    toggleActions: "restart none none reverse"
+  const lastCardST = ScrollTrigger.create({
+    trigger: cards[cards.length - 1],
+    start: "center center"
   });
-});
+
+  // Iterar sobre cada tarjeta
+  cards.forEach((card, index) => {
+    const scale = index === lastCardIndex ? 1 : 0.5;
+    const scaleDown = gsap.to(card, {
+      scale: scale,
+    });
+
+    ScrollTrigger.create({
+      trigger: card,
+      start: "top top",
+      end: () => lastCardST.start,
+      pin: true,
+      pinSpacing: false,
+      scrub: 0.5,
+      ease: "none",
+      animation: scaleDown,
+      toggleActions: "restart none none reverse"
+    });
+  });
 </script>
 <script>
-fetch(`sajadcontent.${lang}.json`)
-  .then(res => res.json())
-  .then(data => {
-    document.body.setAttribute('dir', data.dir || 'ltr');
-    document.getElementById('history-title').textContent = data.history.title;
-    document.getElementById('history-text').textContent = data.history.text;
+  fetch(`sajadcontent.${lang}.json`)
+    .then(res => res.json())
+    .then(data => {
+      document.body.setAttribute('dir', data.dir || 'ltr');
+      document.getElementById('history-title').textContent = data.history.title;
+      document.getElementById('history-text').textContent = data.history.text;
 
-    // Load and insert cards
-    const cardsContainer = document.querySelector('.l-cards');
-    const varieties = data.datesTypes.varieties;
-    cardsContainer.innerHTML = ''; // Clear old content
+      // Load and insert cards
+      const cardsContainer = document.querySelector('.l-cards');
+      const varieties = data.datesTypes.varieties;
+      cardsContainer.innerHTML = ''; // Clear old content
 
-    varieties.forEach(variety => {
-      const card = document.createElement('div');
-      card.classList.add('c-card');
-      card.innerHTML = `
+      varieties.forEach(variety => {
+        const card = document.createElement('div');
+        card.classList.add('c-card');
+        card.innerHTML = `
         <div class="c-card__description">
           <div class="c-card__tagline">${variety.origin}</div>
           <h1 class="c-card__title">${variety.name}</h1>
@@ -153,50 +182,50 @@ fetch(`sajadcontent.${lang}.json`)
           <img src="${variety.image || 'placeholder.jpg'}" alt="${variety.name}">
         </figure>
       `;
-      cardsContainer.appendChild(card);
+        cardsContainer.appendChild(card);
+      });
+
+      // ✅ GSAP ScrollTrigger runs after cards are in DOM
+      setupScrollTriggerEffects();
+    })
+    .catch(err => console.error('Error loading JSON:', err));
+
+  function setupScrollTriggerEffects() {
+    // Important: refresh ScrollTrigger
+    ScrollTrigger.refresh();
+
+    const cards = gsap.utils.toArray(".c-card");
+    const lastCardIndex = cards.length - 1;
+
+    const firstCardST = ScrollTrigger.create({
+      trigger: cards[1],
+      start: "center center"
     });
 
-    // ✅ GSAP ScrollTrigger runs after cards are in DOM
-    setupScrollTriggerEffects();
-  })
-  .catch(err => console.error('Error loading JSON:', err));
-
-function setupScrollTriggerEffects() {
-  // Important: refresh ScrollTrigger
-  ScrollTrigger.refresh();
-
-  const cards = gsap.utils.toArray(".c-card");
-  const lastCardIndex = cards.length - 1;
-
-  const firstCardST = ScrollTrigger.create({
-    trigger: cards[1],
-    start: "center center"
-  });
-
-  const lastCardST = ScrollTrigger.create({
-    trigger: cards[lastCardIndex],
-    start: "center center"
-  });
-
-  cards.forEach((card, index) => {
-    const scale = index === lastCardIndex ? 1 : 0.5;
-    const scaleDown = gsap.to(card, {
-      scale: scale
+    const lastCardST = ScrollTrigger.create({
+      trigger: cards[lastCardIndex],
+      start: "center center"
     });
 
-    ScrollTrigger.create({
-      trigger: card,
-      start: "top top",
-      end: () => lastCardST.start,
-      pin: true,
-      pinSpacing: false,
-      scrub: 0.5,
-      ease: "none",
-      animation: scaleDown,
-      toggleActions: "restart none none reverse"
+    cards.forEach((card, index) => {
+      const scale = index === lastCardIndex ? 1 : 0.5;
+      const scaleDown = gsap.to(card, {
+        scale: scale
+      });
+
+      ScrollTrigger.create({
+        trigger: card,
+        start: "top top",
+        end: () => lastCardST.start,
+        pin: true,
+        pinSpacing: false,
+        scrub: 0.5,
+        ease: "none",
+        animation: scaleDown,
+        toggleActions: "restart none none reverse"
+      });
     });
-  });
-}
+  }
 </script>
 
 </html>
