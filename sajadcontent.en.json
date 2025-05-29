@@ -111,13 +111,13 @@
       "image": "./Images/rabbi.png"
     },
     {
-      "name": "Kaluteh",
+      "name": "Koluteh",
       "origin": "Jiroft County, Kerman Province",
       "features": "Semi-moist; sweet taste; looks similar to Mazafati at a lower price point",
       "uses": "Cost-effective substitute for Mazafati; emerging markets",
       "harvest_time": "Late August",
       "competitive_advantage": "Economical; easy supply; pleasant flavor",
-      "image": "./Images/koluteh.png"
+      "image": "./Images/Koluteh.png"
     },
     {
       "name": "Others",
