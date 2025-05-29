@@ -20,7 +20,7 @@ body {
   scroll-snap-type: y mandatory;
   height: 100%;
   overflow-y: scroll;
-  overflow-x: hidden;
+  
 
 }
 
@@ -215,7 +215,13 @@ p {
   color: #555;
   font-size: 1rem;
 }
-
+ul {
+  list-style-position: inside;
+}
+ul li {
+  position: relative;
+  padding-right: 1.5em; /* make room for bullet */
+}
 .features-list li::before {
   content: '✔';
   color: #d28c4c;
@@ -223,7 +229,11 @@ p {
   left: 0;
   top: 0;
 }
-
+[dir="rtl"] .features-list li::before {
+  direction: ltr;
+    right: 0;
+  
+}
 .heritage-visuals {
   flex: 1 1 300px;
   position: relative;
@@ -328,7 +338,26 @@ p {
   /* optional: makes it semi-transparent */
   z-index: 1;
 }
+[dir="rtl"] .heritage-container::after {
+  content: "";
+  display: block;
+  /* or use position:absolute for overlays */
+  position: absolute;
+  top: -40px;
+  right: 0;
+  bottom: 0;
+  left: 0;
 
+  background-image: url('../Images/CenN.png');
+  background-size: 50%;
+  /* or 'contain' if you prefer */
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: left;
+  opacity: 1;
+  /* optional: makes it semi-transparent */
+  z-index: 1;
+}
 header {
   max-width: 1024px;
   margin: 0 auto;

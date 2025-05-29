@@ -94,6 +94,8 @@
       if (i === 2) {
         const rotateDeg = y * 0.05; // Tweak rotation speed here
         transform += ` rotate(${rotateDeg}deg)`;
+        const scale = Math.max(0.1, 1 - y / 1000); // Won't go below 0.5
+    transform += ` scale(${scale})`;
       }
 
       el.style.transform = transform;
