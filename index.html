@@ -37,12 +37,23 @@
   </main>
   <div class="container">
     <section class="section">
-      <div class="heritage-container">
-        
-    
-        <h4 id="features-title"></h4>
-        <ul class="features-list"></ul>
+      <div class="sectionbg">
+        <div class="heritage-container sec">
+          <h4 id="features-title"></h4>
+          <ul class="features-list"></ul>
+        </div>
+
+        <div class="sec"></div>
+        <div class="sec">
+          <h4 id="advantage-title"></h4>
+          <ul id="advantage-text"></ul>
+        </div>
+        <div class="sec">
+          <h4 id="idealfor-title"></h4>
+          <ul class="idealfor-text"></ul>
+        </div>
       </div>
+
     </section>
     <section class="section">
       <h2>The Second slide</h2>
@@ -72,7 +83,7 @@
     <div class="l-cards" id="dates-cards-container"></div>
 
 
-  
+
   </section>
 
 </body>
@@ -95,7 +106,7 @@
         const rotateDeg = y * 0.05; // Tweak rotation speed here
         transform += ` rotate(${rotateDeg}deg)`;
         const scale = Math.max(0.1, 1 - y / 1000); // Won't go below 0.5
-    transform += ` scale(${scale})`;
+        transform += ` scale(${scale})`;
       }
 
       el.style.transform = transform;
@@ -151,8 +162,13 @@
       document.body.setAttribute('dir', data.dir || 'ltr');
       document.getElementById('history-title').textContent = data.history.title;
       document.getElementById('history-text').textContent = data.history.text;
-      document.getElementById('features-title').textContent =data.KeyFeatures.title;
+      document.getElementById('features-title').textContent = data.KeyFeatures.title;
+      document.getElementById('advantage-title').textContent=data.Advantage.title;
+      document.getElementById('advantage-text').textContent=data.Advantage.text;
+      document.getElementById('idealfor-title').textContent=data.IdealFor.title;
+     
       const featuresList = document.querySelector('.features-list');
+      const idealList = document.querySelector('.idealfor-text');
 
       // Make sure it exists before using forEach
       if (data.KeyFeatures && Array.isArray(data.KeyFeatures.items)) {
@@ -162,6 +178,16 @@
           const li = document.createElement('li');
           li.textContent = feature;
           featuresList.appendChild(li);
+        });
+      }
+
+        if (data.IdealFor && Array.isArray(data.IdealFor.items)) {
+        idealList.innerHTML = ''; // Clear existing <li> if needed
+
+        data.IdealFor.items.forEach(idealitem => {
+          const li = document.createElement('li');
+          li.textContent = idealitem;
+          idealList.appendChild(li);
         });
       }
       // Load and insert cards

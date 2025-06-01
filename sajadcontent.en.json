@@ -19,6 +19,7 @@
     "text": "We don’t just sell dates; we are your partner in brand growth. With deep knowledge of target markets and tailored export solutions, we stand as your reliable ally in the global supply chain."
   },
    "IdealFor": {
+      "title":"Ideal For",
       "items": [
       "Food importers and wholesalers",
       "Retail and health-focused brands",
@@ -31,31 +32,42 @@
     "text": "In a world where speed has replaced flavor, Salam is an invitation to a sweet pause—a moment to savor authenticity in a fresh form. \nSalam, the creative complement to the Sajjad export brand, was born with a new vision for Iranian dates—to show how a traditional product can be transformed into a modern, healthy, and delightful experience. \nFrom date chocolates and natural energy bars to youth-friendly, ready-to-eat packaging, Salam is here to connect today’s tastes with ancient roots. Salam represents a new generation of date products: flavorful, healthy, smartly designed, and ready to be part of the modern lifestyle."
   },
   "SpecializedServices": {
-    "title": "Sajjad Dates Specialized Services",
-    "chant": "Experience, Commitment, and Distinction in the Global Date Market",
-    "abstract":"Backed by decades of expertise in the date industry, Sajjad Dates today stands as a key player in Iran’s date export market, offering comprehensive and customized services for international clients.",
+    "title": "Sajad Dates Specialized Services",
+    "chant": "Sajad Dates – Where Traditional Agriculture Meets Modern Technology",
+    "abstract": "With decades of experience in the date industry, Sajad Dates is recognized as a trusted business partner in global markets. We offer complete and specialized services in the sale and export of various date types from the finest regions of Iran, aiming to meet your needs under the best possible conditions. Our services include:",
     "items": [
-        {
-        "title": "Direct Supply of Premium Dates from Top Iranian Farms",
-        "text": "We source the finest varieties—including Mazafati, Piarom, Zahedi, Rabbi, and other export-grade types—directly from selected farms. All our products are packaged and shipped according to international agricultural and hygiene standards, ensuring you can confidently distribute them in your target markets.\n"
-        },
-        {
+      {
+        "title": "Supply and Export of Various Dates from the Best Regions of Iran",
+        "text": "We source and export a wide variety of dates, including Mazafati, Piarom, Rabbi, Zahedi, Sayer, and Kaliteh, from Iran’s top date-producing regions. All our products are packaged and shipped in compliance with international agricultural and hygiene standards, ensuring you can distribute them in your target markets with ease and confidence."
+      },
+      {
+        "title": "Bulk Orders with High Capacity Fulfillment",
+        "text": "With our cold storage facilities and dedicated warehouses, we are capable of fulfilling high-tonnage orders within short timeframes. Reliable supply is our core advantage."
+      },
+      {
         "title": "Custom Packaging and Professional Branding",
-        "text": "For us, packaging is not just product protection; it’s a chance to tell your brand’s story. By providing a wide range of creative, hygienic, luxurious, and eco-friendly packaging options, we help you stand out distinctively in the market.\n"
-        },
-        {
-        "title": "Export Consulting and Target Market Development",
-        "text": "Our team, with deep knowledge of export pathways, international regulations, and consumer behavior across markets, supports you through every stage of entering, stabilizing, and expanding in foreign markets.\n"
-        },
-        {
+        "text": "For us, packaging is not just about product protection; it’s an opportunity to tell your brand’s story. We view date packaging not merely as a functional need but as a chance to stand out in the market. Through custom private labeling, professional graphic design, and a wide range of packaging structures (luxury, economy, export-grade, bulk), your product will be delivered precisely as the target market demands. We help you make a distinctive presence."
+      },
+      {
+        "title": "Precise, Fully Automatic Weight Sorting",
+        "text": "Using one of the region’s few date box weight-sorting machines in Bam, we adjust the weight of each box with milligram precision. The result? Uniform, reliable packages that meet export standards."
+      },
+      {
+        "title": "Multi-Stage Quality Control",
+        "text": "Before packaging, our products undergo several inspection stages by our quality control team to ensure that only top-grade dates reach our clients. Guaranteed freshness, health, and consistency."
+      },
+      {
+        "title": "Export and Logistics Consultation",
+        "text": "If you're aiming for successful entry into international markets, we’re by your side. From choosing the right date variety for your market to selecting the right container, handling export documentation, and pricing strategy, our team supports you throughout."
+      },
+      {
+        "title": "On-Time Distribution and Delivery",
+        "text": "Utilizing efficient and reputable logistics networks, we manage the shipment process so that your products arrive on time. Timely delivery is a top priority because we understand how delays can impact your business."
+      },
+      {
         "title": "Full Support and After-Sales Service",
-        "text": "We are more than just a supplier—we care about your long-term success. From selecting the most suitable date variety to final delivery, we stand by you to ensure a smooth, reliable, and satisfying experience.\n"
-        },
-        {
-        "title": "Smart Logistics and Timely Delivery",
-        "text": "Fast and precise shipping, leveraging trusted logistics networks, guarantees that your products reach customers promptly while preserving quality.\n"
-        }
-      
+        "text": "We go beyond just supplying products—we care about your long-term success. From selecting the best date type to final delivery, we stay by your side to ensure a smooth, reliable, and satisfying experience. Our team supports you through every step of the export process."
+      }
     ]
   },
   "Nutritional Value":{
