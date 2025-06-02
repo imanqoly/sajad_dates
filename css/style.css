@@ -1,6 +1,6 @@
 @font-face {
-    font-family: IRANsans;
-    src: url('../fonts/IRANSansWebFaNum_Medium.woff');
+    font-family: yekan;
+    src: url('../fonts/Yekan.woff');
 }
 :root {
   --link: rgb(113, 128, 113);
@@ -24,8 +24,8 @@ body {
   scroll-snap-type: y mandatory;
   height: 100%;
   overflow-y: scroll;
-  font-family: IRANsans, 'Helvetica Neue', Helvetica, Arial, sans-serif !important; 
-font-weight: 100;
+  font-family: yekan, 'Helvetica Neue', Helvetica, Arial, sans-serif !important; 
+
 }
 h4{
   font-size: large;
@@ -52,59 +52,74 @@ h4{
   height: 100vh;
 
   font-family: sans-serif;
-  font-size: 2rem;
+  font-size: 0.9rem;
    padding: 40px;
 }
 .sectionpre{
- background-color: #fff;
+ background-color: #fff3e8;
   top: 0;
   height: 100vh;
 
   font-family: sans-serif;
-  font-size: 2rem;
+  
    padding: 40px;
 }
 [dir="rtl"] section{
-    font-family: IRANsans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 50;
+    font-family: yekan, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 100;
 }
 /* Backgrounds for effect */
-.section:nth-child(1) {
-  background: #ffffff;
+.section {
+ 
   color: black;
   
+  padding: 40px;
+}
+.innersecspl{
+border-radius: 50px;
+height: 100%;
+}
+.section:nth-of-type(1) .innersecspl{
+    background: linear-gradient(to bottom, #bfdbfe, #c7d2fe);
+  color: white;
   
 }
-
-.section:nth-child(2) {
+.section:nth-of-type(2) .innersecspl {
   background: linear-gradient(to bottom, #411b03, #eb833d);
   color: white;
+  
 }
 
-.section:nth-child(3) {
+.section:nth-of-type(3) .innersecspl {
   background: linear-gradient(to bottom, #a84021, #8f7b08);
   color: white;
+   
 }
 
-.section:nth-child(4) {
+.section:nth-of-type(4) .innersecspl{
   background: linear-gradient(to bottom, #ec77f7, #0336ff);
   color: black;
+  
 }
-.section:nth-child(5) {
+.section:nth-of-type(5) .innersecspl {
   background: linear-gradient(to bottom, #bfdbfe, #c7d2fe);
   color: black;
+   
 }
-.section:nth-child(6) {
+.section:nth-of-type(6) .innersecspl{
   background: linear-gradient(to bottom, #bfdbfe, #c7d2fe);
   color: black;
+   
 }
-.section:nth-child(7) {
+.section:nth-of-type(7) .innersecspl{
   background: linear-gradient(to bottom, #a56129, #5e1c17);
   color: black;
+   
 }
-.section:nth-child(8) {
+.section:nth-of-type(8) .innersecspl{
   background: linear-gradient(to bottom, #bfdbfe, #c7d2fe);
   color: black;
+   
 }
 .sectionbg{
   background-color: #EBDDCD;
@@ -147,31 +162,37 @@ h4{
   background-position-y: center;
 }
 .splservtitlebase{
-  background-color: #fff;
+ background-image: url('../Images/desertter.png');
+ background-repeat: no-repeat;
+ background-size: 40%;
+ background-position: left;
   padding: 20px;
+  height: 50vh;
+  text-align: right;
 }
 .splservtitle{
   width: 100%;
-  background-color: #d28c4c;
+  
   height: auto;
-  text-align: center;
+  text-align: right;
   border-radius: 50px;
   padding: 20px;
+  width: 50%;
  
 }
 #spl-title{
-  color: #bfdbfe;
+  color: #8f5600;
 }
 #spl-chant{
-  color: #ffdbb2;
+  color: #a55800;
 }
 #spl-text{
-  color: #fff;
+  color: #7c7c7c;
   font-family: sans-serif;
 }
 [dir="rtl"] #spl-text{
-  color: #fff;
-  font-family: IRANsans;
+ color: #7c7c7c;
+  font-family: yekan;
   font-weight: lighter;
 }
 .parallax {
@@ -306,6 +327,7 @@ p {
 
   font-size: 2rem;
   margin-bottom: 1rem;
+  
 }
 
 #history-text {
@@ -379,7 +401,7 @@ ul li {
   display: flex;
   flex-direction: column;
   padding: 20px;
-
+border-radius: 0 50px;
   & .info {
     width: min(80vw, 550px);
     font: 0.85rem/1.8 futura, sans-serif;
@@ -535,13 +557,49 @@ header {
   p{
     text-align: justify;
   }
+
+  .splservtitlebase{
+ background-image: url('../Images/desertter.png');
+ background-repeat: no-repeat;
+ background-size: 100%;
+ background-position: center;
+ background-position-y: 250px;
+ background-blend-mode: soft-light;
+
+  padding: 20px;
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.splservtitle{
+  width: 100%;
+  
+  height: auto;
+  text-align: right;
+  border-radius: 50px;
+  padding: 20px;
+  width: 100%
+ 
+}
+#spl-title{
+  color: #8f5600;
+}
+#spl-chant{
+  color: #a55800;
+}
+#spl-text{
+  color: #7c7c7c;
+  font-family: sans-serif;
+}
+
  .section {
   position: sticky;
   top: 0;
-  height: auto;
+  height: 100vh;
 
   font-family: sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
    padding: 20px;
 } 
 .sectionpre{
@@ -554,7 +612,7 @@ header {
 }
 [dir="rtl"].section {
 
-    font-family: IRANsans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: yekan, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 }
   .sectionbg{
