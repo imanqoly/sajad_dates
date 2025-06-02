@@ -35,41 +35,72 @@
 
     </article>
   </main>
-  <div class="container">
-    <section class="section">
-      <div class="sectionbg">
-        <div class="heritage-container sec">
-          <h4 id="features-title"></h4>
-          <ul class="features-list"></ul>
-        </div>
-
-        <div class="sec"></div>
-        <div class="sec">
-          <h4 id="advantage-title"></h4>
-          <ul id="advantage-text"></ul>
-        </div>
-        <div class="sec">
-          <h4 id="idealfor-title"></h4>
-          <ul class="idealfor-text"></ul>
-        </div>
+  <section class="sectionpre">
+    <div class="sectionbg">
+      <div class="heritage-container sec">
+        <h4 id="features-title"></h4>
+        <ul class="features-list"></ul>
       </div>
 
-    </section>
-    <!-- <section class="section">
-      <h2>The Second slide</h2>
-      <p>Scroll Down for next slide</p>
+      <div class="sec"></div>
+      <div class="sec">
+        <h4 id="advantage-title"></h4>
+        <ul id="advantage-text"></ul>
+      </div>
+      <div class="sec">
+        <h4 id="idealfor-title"></h4>
+        <ul class="idealfor-text"></ul>
+      </div>
+    </div>
+
+  </section>
+  <section class="splservtitlebase">
+    <div class="splservtitle">
+      <h2 id="spl-title"></h2>
+      <h4 id="spl-chant"></h4>
+      <p id="spl-text"></p>
+    </div>
+
+  </section>
+  <div class="container">
+
+
+    <section class="section">
+      <h2 id="Supply-t">The Second slide</h2>
+      <p id="Supply-p">Scroll Down for next slide</p>
     </section>
     <section class="section">
-      <h2>The Third slide</h2>
-      <p>Scroll Down</p>
+       <h2 id="Bulk-t">The Second slide</h2>
+      <p id="Bulk-p">Scroll Down for next slide</p>
     </section>
     <section class="section">
-      <h2>The Fourth slide</h2>
-    </section> -->
+          <h2 id="Custom-t">The Second slide</h2>
+      <p id="Custom-p">Scroll Down for next slide</p>
+    </section>
+      <section class="section">
+        <h2 id="Precise-t">The Second slide</h2>
+      <p id="Precise-p">Scroll Down for next slide</p>
+    </section>
+    <section class="section">
+        <h2 id="Quality-t">The Second slide</h2>
+      <p id="Quality-p">Scroll Down for next slide</p>
+    </section>
+    <section class="section">
+         <h2 id="Logistics-t">The Second slide</h2>
+      <p id="Logistics-p">Scroll Down for next slide</p>
+    </section>
+        <section class="section">
+        <h2 id="Distribution-t">The Second slide</h2>
+      <p id="Distribution-p">Scroll Down for next slide</p>
+    </section>
+    <section class="section">
+        <h2 id="Service-t">The Second slide</h2>
+      <p id="Service-p">Scroll Down for next slide</p>
+    </section>
   </div>
 
   <section>
-  
+
     <div class="l-cards" id="dates-cards-container"></div>
 
 
@@ -153,10 +184,29 @@
       document.getElementById('history-title').textContent = data.history.title;
       document.getElementById('history-text').textContent = data.history.text;
       document.getElementById('features-title').textContent = data.KeyFeatures.title;
-      document.getElementById('advantage-title').textContent=data.Advantage.title;
-      document.getElementById('advantage-text').textContent=data.Advantage.text;
-      document.getElementById('idealfor-title').textContent=data.IdealFor.title;
-     
+      document.getElementById('advantage-title').textContent = data.Advantage.title;
+      document.getElementById('advantage-text').textContent = data.Advantage.text;
+      document.getElementById('idealfor-title').textContent = data.IdealFor.title;
+      document.getElementById('spl-title').textContent = data.SpecializedServices.title;
+      document.getElementById('spl-chant').textContent = data.SpecializedServices.chant;
+      document.getElementById('spl-text').textContent = data.SpecializedServices.abstract;
+      document.getElementById('Supply-t').textContent = data.SpecializedServices.items[0].title;
+      document.getElementById('Supply-p').textContent = data.SpecializedServices.items[0].text;
+      document.getElementById('Bulk-t').textContent = data.SpecializedServices.items[1].title;
+      document.getElementById('Bulk-p').textContent = data.SpecializedServices.items[1].text;
+      document.getElementById('Custom-t').textContent = data.SpecializedServices.items[2].title;
+      document.getElementById('Custom-p').textContent = data.SpecializedServices.items[2].text;
+      document.getElementById('Precise-t').textContent = data.SpecializedServices.items[3].title;
+      document.getElementById('Precise-p').textContent = data.SpecializedServices.items[3].text;
+      document.getElementById('Quality-t').textContent = data.SpecializedServices.items[4].title;
+      document.getElementById('Quality-p').textContent = data.SpecializedServices.items[4].text;
+      document.getElementById('Logistics-t').textContent = data.SpecializedServices.items[5].title;
+      document.getElementById('Logistics-p').textContent = data.SpecializedServices.items[5].text;
+      document.getElementById('Distribution-t').textContent = data.SpecializedServices.items[6].title;
+      document.getElementById('Distribution-p').textContent = data.SpecializedServices.items[6].text;
+      document.getElementById('Service-t').textContent = data.SpecializedServices.items[7].title;
+      document.getElementById('Service-p').textContent = data.SpecializedServices.items[7].text;
+
       const featuresList = document.querySelector('.features-list');
       const idealList = document.querySelector('.idealfor-text');
 
@@ -170,23 +220,23 @@
           featuresList.appendChild(li);
         });
       }
-const labels = {
-  en: {
-    features: "Features",
-    uses: "Uses",
-    harvest_time: "Harvest Time",
-    competitive_advantage: "Advantage",
-    learn_more: "Learn More"
-  },
-  fa: {
-    features: "ویژگی‌ها",
-    uses: "موارد مصرف",
-    harvest_time: "زمان برداشت",
-    competitive_advantage: "مزیت رقابتی",
-    learn_more: "بیشتر بدانید"
-  }
-};
-        if (data.IdealFor && Array.isArray(data.IdealFor.items)) {
+      const labels = {
+        en: {
+          features: "Features",
+          uses: "Uses",
+          harvest_time: "Harvest Time",
+          competitive_advantage: "Advantage",
+          learn_more: "Learn More"
+        },
+        fa: {
+          features: "ویژگی‌ها",
+          uses: "موارد مصرف",
+          harvest_time: "زمان برداشت",
+          competitive_advantage: "مزیت رقابتی",
+          learn_more: "بیشتر بدانید"
+        }
+      };
+      if (data.IdealFor && Array.isArray(data.IdealFor.items)) {
         idealList.innerHTML = ''; // Clear existing <li> if needed
 
         data.IdealFor.items.forEach(idealitem => {
@@ -196,15 +246,15 @@ const labels = {
         });
       }
       // Load and insert cards
-     const cardsContainer = document.querySelector('.l-cards');
-    const varieties = data.datesTypes.varieties;
-    cardsContainer.innerHTML = '';
+      const cardsContainer = document.querySelector('.l-cards');
+      const varieties = data.datesTypes.varieties;
+      cardsContainer.innerHTML = '';
 
-    varieties.forEach(variety => {
-      const card = document.createElement('div');
-      card.classList.add('c-card');
+      varieties.forEach(variety => {
+        const card = document.createElement('div');
+        card.classList.add('c-card');
 
-      card.innerHTML = `
+        card.innerHTML = `
         <div class="c-card__description">
           <div class="c-card__tagline">${variety.origin}</div>
           <h1 class="c-card__title">${variety.name}</h1>
@@ -222,8 +272,8 @@ const labels = {
           <img src="${variety.image || 'placeholder.jpg'}" alt="${variety.name}">
         </figure>
       `;
-      cardsContainer.appendChild(card);
-    });
+        cardsContainer.appendChild(card);
+      });
 
 
       // ✅ GSAP ScrollTrigger runs after cards are in DOM
