@@ -673,6 +673,8 @@ align-items: center;
     border-radius: 50px;
      background-position-x:40%;
       background-position-y:bottom;
+      display: flex;
+      flex-direction: column;
    
 }
 [dir="rtl"] section:nth-of-type(8) .innersecspl{
@@ -682,6 +684,8 @@ align-items: center;
     border-radius: 50px;
      background-position-x:40%;
       background-position-y:bottom;
+        display: flex;
+      flex-direction: column;
 }
 .spltxt{
   align-self: center;
