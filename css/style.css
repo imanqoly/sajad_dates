@@ -78,27 +78,52 @@ h4{
 .innersecspl{
 border-radius: 50px;
 height: 100%;
+display: flex;
+align-items: center; 
+  justify-content: space-between;
+
+}
+.spltxt{
+  align-self: center;
+  min-height: 100%;
+flex: 1;
+padding: 40px;
+}
+.splimg{
+  
+  min-height: 100%;
+  flex: 1;
 }
 .section:nth-of-type(1) .innersecspl{
     background: linear-gradient(to bottom, #bfdbfe, #c7d2fe);
-  color: white;
+    background-image: url("../Images/dateExport.png");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    border-radius: 50px;
+  color: #54639b;
   
 }
 .section:nth-of-type(2) .innersecspl {
-  background: linear-gradient(to bottom, #411b03, #eb833d);
+  background-image: url("../Images/bulk.png");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    border-radius: 50px;
   color: white;
   
 }
 
 .section:nth-of-type(3) .innersecspl {
-  background: linear-gradient(to bottom, #a84021, #8f7b08);
+    background-image: url("../Images/package.png");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    border-radius: 50px;
   color: white;
    
 }
 
 .section:nth-of-type(4) .innersecspl{
   background: linear-gradient(to bottom, #ec77f7, #0336ff);
-  color: black;
+  color: white;
   
 }
 .section:nth-of-type(5) .innersecspl {
@@ -106,6 +131,7 @@ height: 100%;
   color: black;
    
 }
+
 .section:nth-of-type(6) .innersecspl{
   background: linear-gradient(to bottom, #bfdbfe, #c7d2fe);
   color: black;
@@ -117,8 +143,19 @@ height: 100%;
    
 }
 .section:nth-of-type(8) .innersecspl{
-  background: linear-gradient(to bottom, #bfdbfe, #c7d2fe);
-  color: black;
+  background-image: url("../Images/cussuprt.psd.png");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    border-radius: 50px;
+    
+   
+}
+[dir="rtl"] section:nth-of-type(8) .innersecspl{
+  background-image: url("../Images/cussuprt.psd.png");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    border-radius: 50px;
+    flex-direction: row-reverse;
    
 }
 .sectionbg{
@@ -170,11 +207,20 @@ height: 100%;
   height: 50vh;
   text-align: right;
 }
+[dir="ltr"] .splservtitlebase{
+ background-image: url('../Images/desertter.png');
+ background-repeat: no-repeat;
+ background-size: 40%;
+ background-position: right;
+  padding: 20px;
+  height: 50vh;
+  text-align: left;
+}
 .splservtitle{
   width: 100%;
   
   height: auto;
-  text-align: right;
+  
   border-radius: 50px;
   padding: 20px;
   width: 50%;
@@ -552,11 +598,99 @@ header {
   width: 100%;
   height: 100vh;
 }
-
+/* ------------------------------------------------------------------------- */
 @media (width < 700px) {
   p{
     text-align: justify;
   }
+
+  .innersecspl{
+border-radius: 50px;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center; 
+  justify-content: space-between;
+
+}
+
+.section:nth-of-type(1) .innersecspl{
+    background: linear-gradient(to bottom, #bfdbfe, #c7d2fe);
+    background-image: url("../Images/dateExport.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+  color: #54639b;
+  
+}
+.section:nth-of-type(2) .innersecspl {
+  background-image: url("../Images/bulk.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+  color: white;
+  
+}
+
+.section:nth-of-type(3) .innersecspl {
+    background-image: url("../Images/package.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    background-position-x:50%;
+  color: white;
+   
+}
+
+.section:nth-of-type(4) .innersecspl{
+  background: linear-gradient(to bottom, #ec77f7, #0336ff);
+  color: white;
+  
+}
+.section:nth-of-type(5) .innersecspl {
+  background: linear-gradient(to bottom, #bfdbfe, #c7d2fe);
+  color: black;
+   
+}
+
+.section:nth-of-type(6) .innersecspl{
+  background: linear-gradient(to bottom, #bfdbfe, #c7d2fe);
+  color: black;
+   
+}
+.section:nth-of-type(7) .innersecspl{
+  background: linear-gradient(to bottom, #a56129, #5e1c17);
+  color: black;
+   
+}
+.section:nth-of-type(8) .innersecspl{
+  background-image: url("../Images/cussuprt.psd.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+     background-position-x:40%;
+      background-position-y:bottom;
+   
+}
+[dir="rtl"] section:nth-of-type(8) .innersecspl{
+   background-image: url("../Images/cussuprt.psd.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+     background-position-x:40%;
+      background-position-y:bottom;
+}
+.spltxt{
+  align-self: center;
+  min-height: 100%;
+flex: 1;
+padding: 40px;
+}
+.splimg{
+  
+  min-height: 100%;
+  flex: 1;
+}
 
   .splservtitlebase{
  background-image: url('../Images/desertter.png');
@@ -571,6 +705,21 @@ header {
   text-align: center;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.splservtitlebase::before{
+  content: '';
+  position: absolute;
+  top:-190px;
+  right: 20vw;
+  background-image: url('../Images/shoreDates.png');
+  background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+  height: 300px;
+  width:300px;
+  z-index: 50;
+
 }
 .splservtitle{
   width: 100%;
@@ -584,9 +733,11 @@ header {
 }
 #spl-title{
   color: #8f5600;
+   text-align: right;
 }
 #spl-chant{
   color: #a55800;
+   text-align: right;
 }
 #spl-text{
   color: #7c7c7c;
@@ -605,7 +756,7 @@ header {
 .sectionpre{
   
   height: auto;
-
+margin-bottom: 80px;
   font-family: sans-serif;
   font-size: 2rem;
    padding: 20px;
@@ -667,7 +818,7 @@ header {
 }
 .sec:nth-child(3)::after{
   content: '';
-   background-image: url('../Images/shoreDates.png');
+   background-image:none;
    position: absolute;
    width: 50vw;
    
@@ -680,7 +831,7 @@ header {
 
 [dir="rtl"] .sec:nth-child(3)::after{
   content: '';
-   background-image: url('../Images/shoreDates.png');
+   background-image:none;
    position: absolute;
    width: 50vw;
    
