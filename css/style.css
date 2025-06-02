@@ -481,6 +481,9 @@ header {
 }
 
 @media (width < 700px) {
+  p{
+    text-align: justify;
+  }
  .section {
   position: sticky;
   top: 0;
