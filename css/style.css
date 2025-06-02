@@ -1,3 +1,7 @@
+@font-face {
+    font-family: IRANsans;
+    src: url('../fonts/IRANSansWebFaNum_Medium.woff');
+}
 :root {
   --link: rgb(113, 128, 113);
 }
@@ -8,7 +12,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+
 }
 
 body {
@@ -20,8 +24,15 @@ body {
   scroll-snap-type: y mandatory;
   height: 100%;
   overflow-y: scroll;
-  
+  font-family: IRANsans, 'Helvetica Neue', Helvetica, Arial, sans-serif !important; 
 
+}
+h4{
+  font-size: large;
+}
+
+.txtexc{
+  color: rgb(145, 145, 145);
 }
 #idealfor-title, #advantage-title{
   color: #8f7b08;
@@ -44,7 +55,9 @@ body {
   font-size: 2rem;
    padding: 40px;
 }
-
+[dir="rtl"] section{
+    font-family: IRANsans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 /* Backgrounds for effect */
 .section:nth-child(1) {
   background: #ffffff;
@@ -243,11 +256,13 @@ p {
 }
 
 #history-text {
-  color: wheat;
+  color: rgb(255, 255, 255);
   font-size: 1rem;
   line-height: 1.6;
 }
-
+[dir="lrt"] #history-text{
+  font-family: sans-serif !important;
+} 
 .idealfor-text,.features-list {
  
   list-style: none;
@@ -475,6 +490,11 @@ header {
   font-size: 2rem;
    padding: 20px;
 } 
+[dir="rtl"].section {
+
+    font-family: IRANsans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
   .sectionbg{
   background-color: #EBDDCD;
   width: 100%;
@@ -510,6 +530,18 @@ header {
   background-size: contain;
   background-position-y: center;
 }
+[dir="rtl"] .sec:nth-child(2)::after{
+  content: '';
+  position: absolute;
+   height: 200px;
+   width:200px;
+   top: -50px;
+   right: 200px;
+  background-image: url('../Images/CenN.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
 .sec:nth-child(3) {
   position: relative; /* Needed so ::after's absolute position is relative to this */
 }
@@ -520,6 +552,19 @@ header {
    width: 50vw;
    
    left:150px;
+   bottom: -250px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+
+[dir="rtl"] .sec:nth-child(3)::after{
+  content: '';
+   background-image: url('../Images/shoreDates.png');
+   position: absolute;
+   width: 50vw;
+   
+   right:150px;
    bottom: -250px;
   background-repeat: no-repeat;
   background-size: contain;

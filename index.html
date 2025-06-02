@@ -170,7 +170,22 @@
           featuresList.appendChild(li);
         });
       }
-
+const labels = {
+  en: {
+    features: "Features",
+    uses: "Uses",
+    harvest_time: "Harvest Time",
+    competitive_advantage: "Advantage",
+    learn_more: "Learn More"
+  },
+  fa: {
+    features: "ویژگی‌ها",
+    uses: "موارد مصرف",
+    harvest_time: "زمان برداشت",
+    competitive_advantage: "مزیت رقابتی",
+    learn_more: "بیشتر بدانید"
+  }
+};
         if (data.IdealFor && Array.isArray(data.IdealFor.items)) {
         idealList.innerHTML = ''; // Clear existing <li> if needed
 
@@ -181,33 +196,35 @@
         });
       }
       // Load and insert cards
-      const cardsContainer = document.querySelector('.l-cards');
-      const varieties = data.datesTypes.varieties;
-      cardsContainer.innerHTML = ''; // Clear old content
+     const cardsContainer = document.querySelector('.l-cards');
+    const varieties = data.datesTypes.varieties;
+    cardsContainer.innerHTML = '';
 
-      varieties.forEach(variety => {
-        const card = document.createElement('div');
-        card.classList.add('c-card');
-        card.innerHTML = `
+    varieties.forEach(variety => {
+      const card = document.createElement('div');
+      card.classList.add('c-card');
+
+      card.innerHTML = `
         <div class="c-card__description">
           <div class="c-card__tagline">${variety.origin}</div>
           <h1 class="c-card__title">${variety.name}</h1>
           <div class="c-card__excerpt">
-            <strong>Features:</strong> ${variety.features}<br>
-            <strong>Uses:</strong> ${variety.uses}<br>
-            <strong>Harvest Time:</strong> ${variety.harvest_time}<br>
-            <strong>Advantage:</strong> ${variety.competitive_advantage}
+            <strong>${labels[lang].features}:</strong> <span class="txtexc">${variety.features}</span><br>
+            <strong>${labels[lang].uses}:</strong> <span class="txtexc">${variety.uses}</span><br>
+            <strong>${labels[lang].harvest_time}:</strong><span class="txtexc"> ${variety.harvest_time}</span><br>
+            <strong>${labels[lang].competitive_advantage}:</strong> <span class="txtexc">${variety.competitive_advantage}</span>
           </div>
           <div class="c-card__cta">
-            <a href="#" onclick="event.preventDefault()">Learn More</a>
+            <a href="#" onclick="event.preventDefault()">${labels[lang].learn_more}</a>
           </div>
         </div>
         <figure class="c-card__figure">
           <img src="${variety.image || 'placeholder.jpg'}" alt="${variety.name}">
         </figure>
       `;
-        cardsContainer.appendChild(card);
-      });
+      cardsContainer.appendChild(card);
+    });
+
 
       // ✅ GSAP ScrollTrigger runs after cards are in DOM
       setupScrollTriggerEffects();
