@@ -1,10 +1,10 @@
 {
-  "dir":"ltr",
-    "history": {
-      "title": "Our Heritage",
-      "text": "Sajad Dates is a brand built on over half a century of passion, expertise, and generational continuity—a story of a family rooted in the scorching yet fertile palm groves of Bam, who, since the 1940s, have intertwined their lives with the date palm. \n The founder of the sajadi family, relying on local knowledge, respect for the land, and a belief in quality, planted a seed that grew into a towering presence in Iran’s date industry. \nIn the following decades, the second generation expanded the family groves, improved harvesting and storage methods, and took the first steps toward packaging and export—marking Sajad’s entry into international markets. \nTragically, this generation, who were the pillars of the brand’s growth and industrialization, perished in the devastating Bam earthquake. \nYet the loss became a source of inspiration, not an end. Today, Sajad continues stronger than ever, rooted in that legacy. \nThe third generation ushered in a new era with advanced processing units, international certifications, a modern brand identity, and an export development team—paving the way for full entry into global markets. \nNow, sajad Dates stands as a leading exporter of Iranian Mazafati dates, with customers across Europe, Asia, Canada, and the Middle East. With a lasting commitment to quality, sustainability, and customer satisfaction, we remain proudly rooted while moving boldly toward the future. sajad is a story of generational continuity, enduring quality, and a global vision for an authentic Iranian product."
-    },
-    "KeyFeatures": {
+  "dir": "ltr",
+  "history": {
+    "title": "Our Heritage",
+    "text": "Sajad Dates is a brand built on over half a century of passion, expertise, and generational continuity—a story of a family rooted in the scorching yet fertile palm groves of Bam, who, since the 1940s, have intertwined their lives with the date palm. \n The founder of the sajadi family, relying on local knowledge, respect for the land, and a belief in quality, planted a seed that grew into a towering presence in Iran’s date industry. \nIn the following decades, the second generation expanded the family groves, improved harvesting and storage methods, and took the first steps toward packaging and export—marking Sajad’s entry into international markets. \nTragically, this generation, who were the pillars of the brand’s growth and industrialization, perished in the devastating Bam earthquake. \nYet the loss became a source of inspiration, not an end. Today, Sajad continues stronger than ever, rooted in that legacy. \nThe third generation ushered in a new era with advanced processing units, international certifications, a modern brand identity, and an export development team—paving the way for full entry into global markets. \nNow, sajad Dates stands as a leading exporter of Iranian Mazafati dates, with customers across Europe, Asia, Canada, and the Middle East. With a lasting commitment to quality, sustainability, and customer satisfaction, we remain proudly rooted while moving boldly toward the future. sajad is a story of generational continuity, enduring quality, and a global vision for an authentic Iranian product."
+  },
+  "KeyFeatures": {
     "title": "Key Features of Our Products",
     "items": [
       "Handpicked from premium palm groves in Bam",
@@ -18,13 +18,12 @@
     "title": "Sajad’s Competitive Advantage",
     "text": "We don’t just sell dates; we are your partner in brand growth. With deep knowledge of target markets and tailored export solutions, we stand as your reliable ally in the global supply chain."
   },
-   "IdealFor": {
-      "title":"Ideal For",
-      "items": [
+  "IdealFor": {
+    "title": "Ideal For",
+    "items": [
       "Food importers and wholesalers",
       "Retail and health-focused brands",
       "Date-based food product manufacturers"
-      
     ]
   },
   "Salam": {
@@ -70,94 +69,109 @@
       }
     ]
   },
-  "Nutritional Value":{
+  "Nutritional Value": {
     "title": "Nutritional Value & Health Benefits of Dates",
     "abstract": "Dates are a natural treasure trove of energy, fiber, and essential vitamins—supporting immune health, heart function, and better digestion.",
-    "howToConsumeTitle":"Dates are a natural treasure trove of energy, fiber, and essential vitamins—supporting immune health, heart function, and better digestion.",
-    "howToText":"Dates can be enjoyed fresh, dried, or as a purée in various foods and drinks. Eat them on their own, blend them into smoothies, toss them in salads, or use them as a natural sweetener in cakes and desserts. \nDates are also a popular ingredient in energy bars, snacks, and mixes with nuts and seeds. Sajad Dates, with their premium quality, rich nutrient profile, and zero chemical additives, are an excellent choice for daily consumption and a wholesome addition to any diet.",
-    "keyUses":{
-        "items":[
-            "Natural sweetener in desserts and beverages",
-            "Nutritious base for snacks, energy bars, and chocolates",
-            "Ideal for clean, sugar-free diets"
-        ]
+    "howToConsumeTitle": "Dates are a natural treasure trove of energy, fiber, and essential vitamins—supporting immune health, heart function, and better digestion.",
+    "howToText": "Dates can be enjoyed fresh, dried, or as a purée in various foods and drinks. Eat them on their own, blend them into smoothies, toss them in salads, or use them as a natural sweetener in cakes and desserts. \nDates are also a popular ingredient in energy bars, snacks, and mixes with nuts and seeds. Sajad Dates, with their premium quality, rich nutrient profile, and zero chemical additives, are an excellent choice for daily consumption and a wholesome addition to any diet.",
+    "keyUses": {
+      "items": [
+        "Natural sweetener in desserts and beverages",
+        "Nutritious base for snacks, energy bars, and chocolates",
+        "Ideal for clean, sugar-free diets"
+      ]
     }
   },
-  "datesTypes":{
+  "datesTypes": {
     "title": "sajad Dates Varieties",
-  "varieties": [
-    {
-      "name": "Mazafati",
-      "origin": "Bam County, Kerman Province",
-      "features": "Soft, velvety texture; dark near-black color; high moisture; very sweet taste",
-      "uses": "Daily consumption; luxury packaging; health-focused markets",
-      "harvest_time": "Late August – October",
-      "competitive_advantage": "Fresh-eating; most popular date variety in Iran and many international markets",
-      "image": "./Images/mazafati.png"
-    },
-    {
-      "name": "Piarom",
-      "origin": "Hajiabad County, Hormozgan Province",
-      "features": "Semi-dry, meaty texture; low sugar; glossy dark-brown color; unique flavor",
-      "uses": "Luxury export markets in Europe & the Gulf; ideal for diabetic diets",
-      "harvest_time": "October",
-      "competitive_advantage": "Low sugar; long shelf life; known as “chocolate date”; premium export product",
-      "image": "./Images/piarom.png"
-    },
-    {
-      "name": "Zahedi",
-      "origin": "Fars Province & southern Iran",
-      "features": "Completely dry; amber-to-light-brown color; firm, nutrient-dense texture",
-      "uses": "General consumption; baking and date flour production",
-      "harvest_time": "Late August",
-      "competitive_advantage": "Very long shelf life; easy handling & storage",
-      "image": "./Images/zahedi.png"
-    },
-    {
-      "name": "Rabbi",
-      "origin": "Sistan & Baluchestan Province",
-      "features": "Semi-dry; elongated shape; thin skin; reddish-brown color; distinctive taste",
-      "uses": "Food processing; export markets",
-      "harvest_time": "August – September",
-      "competitive_advantage": "Affordable price; high shelf life; very processable",
-      "image": "./Images/rabbi.png"
-    },
-    {
-      "name": "Koluteh",
-      "origin": "Jiroft County, Kerman Province",
-      "features": "Semi-moist; sweet taste; looks similar to Mazafati at a lower price point",
-      "uses": "Cost-effective substitute for Mazafati; emerging markets",
-      "harvest_time": "Late August",
-      "competitive_advantage": "Economical; easy supply; pleasant flavor",
-      "image": "./Images/Koluteh.png"
-    },
-    {
-      "name": "Others",
-      "origin": "Khuzestan Province",
-      "features": "Semi-dry; mild sweet taste; light-brown color; long storage life",
-      "uses": "European bulk export; wholesale; snack mixes with nuts",
-      "harvest_time": "Late August",
-      "competitive_advantage": "Excellent for large-scale export; competitive pricing",
-      "image": "./Images/others.png"
-    }
-  ]
+    "varieties": [
+      {
+        "name": "Mazafati",
+        "origin": "Bam County, Kerman Province",
+        "features": "Soft, velvety texture; dark near-black color; high moisture; very sweet taste",
+        "uses": "Daily consumption; luxury packaging; health-focused markets",
+        "harvest_time": "Late August – October",
+        "competitive_advantage": "Fresh-eating; most popular date variety in Iran and many international markets",
+        "image": "./Images/mazafati.png"
+      },
+      {
+        "name": "Piarom",
+        "origin": "Hajiabad County, Hormozgan Province",
+        "features": "Semi-dry, meaty texture; low sugar; glossy dark-brown color; unique flavor",
+        "uses": "Luxury export markets in Europe & the Gulf; ideal for diabetic diets",
+        "harvest_time": "October",
+        "competitive_advantage": "Low sugar; long shelf life; known as “chocolate date”; premium export product",
+        "image": "./Images/piarom.png"
+      },
+      {
+        "name": "Zahedi",
+        "origin": "Fars Province & southern Iran",
+        "features": "Completely dry; amber-to-light-brown color; firm, nutrient-dense texture",
+        "uses": "General consumption; baking and date flour production",
+        "harvest_time": "Late August",
+        "competitive_advantage": "Very long shelf life; easy handling & storage",
+        "image": "./Images/zahedi.png"
+      },
+      {
+        "name": "Rabbi",
+        "origin": "Sistan & Baluchestan Province",
+        "features": "Semi-dry; elongated shape; thin skin; reddish-brown color; distinctive taste",
+        "uses": "Food processing; export markets",
+        "harvest_time": "August – September",
+        "competitive_advantage": "Affordable price; high shelf life; very processable",
+        "image": "./Images/rabbi.png"
+      },
+      {
+        "name": "Koluteh",
+        "origin": "Jiroft County, Kerman Province",
+        "features": "Semi-moist; sweet taste; looks similar to Mazafati at a lower price point",
+        "uses": "Cost-effective substitute for Mazafati; emerging markets",
+        "harvest_time": "Late August",
+        "competitive_advantage": "Economical; easy supply; pleasant flavor",
+        "image": "./Images/Koluteh.png"
+      },
+      {
+        "name": "Others",
+        "origin": "Khuzestan Province",
+        "features": "Semi-dry; mild sweet taste; light-brown color; long storage life",
+        "uses": "European bulk export; wholesale; snack mixes with nuts",
+        "harvest_time": "Late August",
+        "competitive_advantage": "Excellent for large-scale export; competitive pricing",
+        "image": "./Images/others.png"
+      }
+    ]
   },
-  "packaging":{
-    "chant":"We at sajad Dates are always ready to build close connections with our clients and deliver an unparalleled experience trading authentic Iranian dates.",
-    "text":"In the competitive world of food exports, choosing a reliable supplier of premium Iranian dates can make all the difference in your success. \nAt sajad, every variety of date is harvested, processed, and packed under the highest hygiene standards to ensure you receive a healthy, fresh, and trustworthy product. We use optimized packaging to preserve quality and extend shelf life, and we’re prepared to fulfill high-volume orders with precise, on-time delivery.",
-    "packagingOptions":{
-        "item":[
-            "Bulk export: 5 kg and 10 kg sacks",
-            "Luxury consumer packs: 250 g to 1 kg",
-            "Heavy-duty cartons suitable for sea and air freight"
-        ]
+  "packaging": {
+    "chant": "We at sajad Dates are always ready to build close connections with our clients and deliver an unparalleled experience trading authentic Iranian dates.",
+    "text": "In the competitive world of food exports, choosing a reliable supplier of premium Iranian dates can make all the difference in your success. \nAt sajad, every variety of date is harvested, processed, and packed under the highest hygiene standards to ensure you receive a healthy, fresh, and trustworthy product. We use optimized packaging to preserve quality and extend shelf life, and we’re prepared to fulfill high-volume orders with precise, on-time delivery.",
+    "packagingOptions": {
+      "item": [
+        "Bulk export: 5 kg and 10 kg sacks",
+        "Luxury consumer packs: 250 g to 1 kg",
+        "Heavy-duty cartons suitable for sea and air freight"
+      ]
     },
-    "MinOrder":{
-        "item":[
-            "1 pallet (retail markets)",
-            "1 container (wholesale/large orders)"
-        ]
+    "MinOrder": {
+      "item": [
+        "1 pallet (retail markets)",
+        "1 container (wholesale/large orders)"
+      ]
     },
-    "lastWord":"Let’s grow together—partner with sajad Dates for consistency, quality, and a truly seamless export experience."
-  }
+    "lastWord": "Let’s grow together—partner with sajad Dates for consistency, quality, and a truly seamless export experience."
+  },
+  "Contact": {
+  "title": "Contact Information",
+  "brand_note": "Quality, precision, and trusted distribution.",
+  "items": [
+    { "type": "address",  "label": "Factory Address", "value": "Industrial Industrial Park, Bam, IRAN" },
+    { "type": "phone",    "label": "Phone",           "value": "+98 34-44350020" },
+    { "type": "mobile",   "label": "Mobile",          "value": "+98 9131440071" },
+    { "type": "fax",      "label": "Fax",             "value": "+98 34-44350021" },
+    { "type": "whatsapp", "label": "WhatsApp",        "value": "+98 9131440071" },
+    { "type": "office",   "label": "Kerman Office",   "value": "+98 34-32458037" },
+    { "type": "email",    "label": "Email",           "value": "info@sajaddates.com" }
+  ],
+  "copyright": "All rights reserved."
+}
+
 }

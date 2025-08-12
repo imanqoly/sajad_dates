@@ -82,7 +82,7 @@
       ]
     }
   },
-   "datesTypes": { 
+  "datesTypes": {
     "title": "Сорта фиников Sajjad",
     "varieties": [
       {
@@ -158,5 +158,20 @@
       ]
     },
     "lastWord": "Давайте развиваться вместе — сотрудничайте с Sajjad Dates ради стабильности, качества и по-настоящему бесшовного экспортного опыта."
-  }
+  },
+  "Contact": {
+  "title": "Контакты",
+  "brand_note": "Качество, точность и надежная логистика.",
+  "items": [
+    { "type": "address",  "label": "Адрес завода",   "value": "промышленная зона, Бам, Иран" },
+    { "type": "phone",    "label": "Телефон",        "value": "+98 34-44350020" },
+    { "type": "mobile",   "label": "Мобильный",      "value": "+98 9131440071" },
+    { "type": "fax",      "label": "Факс",           "value": "+98 34-44350021" },
+    { "type": "whatsapp", "label": "WhatsApp",       "value": "+98 9131440071" },
+    { "type": "office",   "label": "Офис в Кермане", "value": "+98 34-32458037" },
+    { "type": "email",    "label": "Эл. почта",      "value": "info@sajaddates.com" }
+  ],
+  "copyright": "Все права защищены."
+}
+
 }
